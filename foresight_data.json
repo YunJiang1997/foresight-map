@@ -1,0 +1,1068 @@
+[
+  {
+    "name": "Corporate",
+    "portfolios": [
+      {
+        "name": "Finance",
+        "productFamilies": [
+          {
+            "name": "Accounting",
+            "description": "Manage financial transactions: ledger management and tax reporting.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI continuously reconciles inter-company accounts and flags mismatches before period close, improving data quality and reducing audit adjustments.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Nestle automated AP invoice processing via a custom application, cutting manual labour across five teams for marketing costs, reserves, and discounts. [https://www.itmagination.com/clients/nestle]\n2. Nestle integrated SAP Joule AI copilot into its S/4HANA Cloud core, automating journal uploads, service initiations, and trade classifications. [https://technologymagazine.com/news/how-nestle-uses-sap-s4hana-cloud-to-scale-ai-operations]\n3. Coca-Cola Bottling Company United used Microsoft Power Platform RPA to automate a multi-step SAP invoicing process handling 50,000+ orders, eliminating 10 FTE equivalents. [https://www.microsoft.com/en-us/power-platform/blog/power-apps/coca-cola-united-automates-multi-step-sap-invoicing-process-power-platform/]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered intelligent document processing automates invoice capture, coding, and posting, reducing manual accounting workload by up to 70% in high-volume shared service environments.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Blockchain",
+                "description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.",
+                "source": "Cosmos 1.0, EconSight",
+                "implications": "An immutable blockchain ledger enables real-time reconciliation between Pernod Ricard affiliates and third parties, reducing month-end close time and auditor effort.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Seed",
+                "successfulCases": ""
+              }
+            ]
+          },
+          {
+            "name": "Consolidation and reporting",
+            "description": "Automate and streamline planning, budgeting, forecasting, and consolidation activities.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI is beginning to automate and augment FP&A workflows end-to-end, from data aggregation to narrative generation in management reports, materially reducing manual effort. GenAI can draft management commentary, variance analysis narratives, and board-ready reporting summaries, enabling finance teams to shift from data assembly to strategic analysis.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Heineken deployed 'Hoppy', a GenAI chatbot on SAP BTP, to help finance teams navigate internal standards and flag missing cost-centre data in purchase orders. [https://www.clubitc.eu/2025/06/04/sap-powers-heinekens-digital-transformation-ai-chatbot-hoppy-accelerates-data-access-and-operational-efficiency/]\n2. Heineken partnered with Anaplan to build global FP&A capabilities, enabling value-oriented management reporting and planning across 190 countries. [https://www.anaplan.com/connect/on-demand-sessions/how-heineken-approaches-financial-planning-and-analysis/]\n3. Nestle uses AI to automate data cleansing, report generation, and FP&A narrative, replacing manual forecasting with advanced statistical models. [https://aimagazine.com/news/frontier-firm-ai-how-nestle-uses-ai-to-drive-performance]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML models automate multi-entity financial consolidation, detect anomalies in reported data, and compress the financial close cycle – a direct efficiency lever for Pernod Ricard's complex multi-affiliate structure.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Nestle built an Azure Data Lake with Deloitte, powering 400+ ML-driven operational and executive reports for 800+ finance and sales users. [https://www.deloitte.com/global/en/services/consulting/perspectives/nestle-case-study.html]\n2. AB InBev deployed the 'ABCredit' ML model to manage credit risk across its distributor and retail network, generating individualised creditworthiness assessments. [https://aiexpert.network/case-study-ab-inbev-integrates-ai-for-innovation-and-efficiency/]\n3. Coca-Cola HBC implemented ML demand-forecasting integrated with sales, weather, and promotions data, improving forecast accuracy by 30% and cutting inventory costs by 45M euros annually. [https://digitaldefynd.com/IQ/ways-coca-cola-uses-artificial-intelligence/]"
+              }
+            ]
+          },
+          {
+            "name": "Finance Operations",
+            "description": "Aggregate financial processes: AP, AR, and customer billing.",
+            "technologies": [
+              {
+                "name": "Financial technology",
+                "description": "Financial technology (FinTech) encompasses digital platforms and software that modernise financial services - including payments, lending, insurance, and treasury management. Enabled by open APIs, AI, and mobile infrastructure, FinTech lowers transaction costs and accelerates the speed and accessibility of financial operations.",
+                "source": "Cosmos 1.0",
+                "implications": "Fintech enablers (intelligent OCR, AI-powered AP/AR, virtual card programmes) can automate up to 80% of high-volume, low-complexity transactions in the group's shared services centre.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Robotic process automation",
+                "description": "Robotic Process Automation (RPA) uses software bots to replicate human actions in rule-based, repetitive digital tasks - such as data entry, reconciliations, and report distribution. By automating high-volume, low-complexity work, RPA frees knowledge workers to focus on higher-value analytical and decision-making activities.",
+                "source": "Cosmos 1.0",
+                "implications": "Autonomous robots (software RPA) handle repetitive finance tasks – statement downloads, reconciliations, report distribution – freeing staff for value-added analysis.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Smart Contract",
+                "description": "Smart Contracts are computer programmes that automatically execute a transaction in the blockchain when certain terms and conditions are met. They can help authenticate the parties and the documentation of a transaction. Tech Opportunity Score: 8/10. (BNP l'atelier Tech Radar – Access / Infrastructure)",
+                "source": "BNP l'atelier",
+                "implications": "Smart contracts automate payment triggers when delivery conditions are confirmed on-chain, reducing disputes in B2B trade terms with distributors.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "Not Found"
+              }
+            ]
+          },
+          {
+            "name": "Industrial controlling",
+            "description": "Measure performance of industrial processes; cost to serve and product costing.",
+            "technologies": [
+              {
+                "name": "Digital Twin",
+                "description": "Digital twin describes the digital mapping and modeling of real or unreal objects, right up to a complete manufacturing plant. The aim is to test the functionality or simulation of processes. Digital Twin can be used also for predictive maintenance or remote process control. (EconSight 100 Game Changers – Industry, Digitization)",
+                "source": "EconSight",
+                "implications": "A digital twin of each production site enables real-time cost-to-serve monitoring, simulates process changes before implementation, and supports site-level financial performance benchmarking.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. AB InBev deployed Azure Digital Twins across breweries to monitor energy use, detect bottlenecks in real time, and reduce electricity costs at its Wuhan site by nearly 10%. [https://azure.microsoft.com/en-us/blog/converging-the-physical-and-digital-with-digital-twins-mixed-reality-and-metaverse-apps/]\n2. Nestle uses virtual digital twins of production-line equipment across 300+ factories to simulate adjustments, cut downtime, and reduce time and cost by over 70%. [https://www.nestle.com/about/research-development/digital-innovation]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based anomaly detection in production metrics flags deviations from standard cost early, enabling corrective action before month-end close rather than after.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Heineken applied ML to its brewing and blending tank filtration process, producing a daily-optimised production schedule that significantly increased brewing capacity per month. [https://www.aidataanalytics.network/data-science-ai/articles/how-heineken-is-brewing-innovation-with-ai]\n2. AB InBev used deep reinforcement learning to help packing-line operators detect and auto-compensate for bottlenecks, cutting production downtime at its Wuhan brewery. [https://aiexpert.network/case-study-ab-inbev-integrates-ai-for-innovation-and-efficiency/]\n3. Diageo deployed Strategy AI analytics to optimise P&L decisions across 200+ brands with AI-generated dashboards for anomaly detection and what-if modelling. [https://www.strategysoftware.com/customer-stories/diageo]"
+              }
+            ]
+          },
+          {
+            "name": "Treasury & Cash Management",
+            "description": "Monitor and manage cash inflows/outflows to ensure sufficient liquidity.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based cash flow forecasting improves 13-week rolling forecast accuracy by learning from historical payment patterns across subsidiaries and markets.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever centralised cash flow forecasting through its data lake and TIS platform, automating a 13-week global cash position forecast and winning the 2023 EuroFinance Treasury Excellence Award. [https://www.eurofinance.com/news/transcending-boundaries-unilevers-cash-flow-forecasting-foresight/]\n2. Unilever implemented TIS cash forecasting to automate multi-ERP, multi-bank data aggregation, anticipating 1.5M euros annual benefit once fully rolled out across all regions. [https://tispayments.com/success-stories/unilever/]"
+              },
+              {
+                "name": "Blockchain",
+                "description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.",
+                "source": "Cosmos 1.0, EconSight",
+                "implications": "Blockchain-enabled intra-group settlement and trade finance reduces FX friction and reconciliation cost for a group with significant inter-company flows.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Seed",
+                "successfulCases": "Not Found"
+              },
+              {
+                "name": "Quantum Computing",
+                "description": "Quantum computing refers to next-generation computers that operate on the basis of quantum mechanical states rather than physical laws. (EconSight 100 Game Changers – Digitization)",
+                "source": "EconSight",
+                "implications": "Quantum algorithms will solve portfolio optimisation and FX hedging problems at a scale and speed impossible for classical computers – a decisive treasury advantage in a group managing billions in multi-currency exposure.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "HR",
+        "productFamilies": [
+          {
+            "name": "Compensation & benefits",
+            "description": "Total rewards package: compensation, benefits, and market benchmarking.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI audits pay equity across gender, nationality, and function at scale, enabling the group to meet its pay equity commitments and reduce legal exposure.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "Not Found"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML models benchmark PR's total compensation packages against real-time external salary data, enabling proactive retention adjustments before attrition risk escalates.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "Nestle uses people analytics with ML - tracking attrition patterns, performance review cycles, and remuneration data - to identify pay-related drivers of employee departure and inform compensation decisions. [https://www.myhrfuture.com/digital-hr-leaders-podcast/2019/7/22/nestles-people-analytics-journey]"
+              }
+            ]
+          },
+          {
+            "name": "Employee staffing",
+            "description": "Enable the organisation to manage recruitment.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI interview analysis and bias detection tools support more equitable, data-driven hiring processes aligned with the group's D&I commitments.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever deployed HireVue and Pymetrics AI to screen 1.8M applications annually, cutting time-to-hire by 90%, saving 1M GBP, and increasing diversity of new hires by 16%. [https://bernardmarr.com/the-amazing-ways-how-unilever-uses-artificial-intelligence-to-recruit-train-thousands-of-employees/]\n2. L'Oreal used Mya chatbot and Seedlink AI scoring to screen candidates for internships, reducing recruiter time per application from 20 to 4 minutes and producing the most diverse intern cohort to date. [https://www.peoplematters.in/article/technology/how-the-worlds-largest-cosmetic-company-transformed-its-hiring-practice-with-ai-19006]\n3. Nestle adopted ML-driven talent acquisition platforms scanning resumes and ranking applicants, saving its global recruiting team 8,000 hours annually. [https://digitaldefynd.com/IQ/nestle-using-ai/]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered candidate matching and CV screening reduces time-to-hire and improves quality-of-hire by learning from historical hiring outcomes.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Affective Computing",
+                "description": "Affective Computing is a set of technologies designed to collect behavioural or physiological data in order to detect, monitor and analyse human emotions. Tech Opportunity Score: 7/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Emotion and stress detection during structured video interviews provides hiring managers with objective behavioural data, reducing reliance on interviewer subjectivity – a bold step toward evidence-based talent selection.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Learning and employee engagement & experience",
+            "description": "Facilitate learning management, right-skilling, and employee day-to-day experience.",
+            "technologies": [
+              {
+                "name": "Virtual reality",
+                "description": "Virtual Reality (VR) immerses users in fully computer-generated, three-dimensional environments experienced through a headset. Beyond entertainment, VR is increasingly adopted for immersive workforce training, virtual brand experiences, and complex simulation scenarios that would be costly or risky to conduct in the real world.",
+                "source": "Cosmos 1.0",
+                "implications": "VR enables immersive safety training (distillery operations, warehouse), brand storytelling for new joiners, and on-the-job skills simulations that are more engaging and cost-effective than in-person sessions.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Nestle rolled out VR safety training at its Nescafe factory in Girona using VRdirect, teaching forklift traffic rules to new employees before physical site access, achieving 75% information recall. [https://www.vrdirect.com/success-stories/how-nestle-is-scaling-virtual-reality-to-train-employees/]\n2. LVMH / Moet Hennessy launched Hennessy 'Ampelos', a VR vine-pruning simulator built on a digital twin of real Cognac vines, enabling craft-skills training independent of weather conditions. [https://x.com/LVMH/status/1794017936438440422]\n3. LVMH uses VR modules to immerse employees in the Moet & Chandon winemaking process, providing brand heritage and craftsmanship training at scale. [https://ismguide.com/lvmh-vr-training-case-study/]"
+              },
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI coaching tools provide always-on, personalised leadership and skills development at scale, democratising access to executive coaching across all levels of the organisation. GenAI dramatically accelerates the creation of localised training content in multiple languages across PR's 19,000-strong global workforce, reducing content production cost by an order of magnitude.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever deployed the Gloat AI-powered FLEX Experiences talent marketplace for 90,000+ employees in 90+ countries, matching staff to projects and personalised learning paths. [https://gloat.com/impacts/unilever-developed-a-future-proof-workforce/]\n2. Nestle launched NesGPT (internal GenAI based on ChatGPT) to 150,000+ employees, saving an average of 45 minutes per week and supporting personalised productivity and learning tasks. [https://www.worklife.news/technology/nesgpt-nestle-genai/]\n3. Diageo uses AI to analyse industry trends and employee data to identify critical future skills and provide employees with personalised learning paths via its My Learning Hub platform. [https://www.diageo.com/en/news-and-media/stories/2020/diageo-my-learning-hub-skills-for-life-anytime-anywhere]"
+              }
+            ]
+          },
+          {
+            "name": "Performance, Talent, Diversity & Inclusion",
+            "description": "Manage talent, performance tracking, and D&I policies.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI tools audit job descriptions, performance reviews, and promotion decisions for unintentional bias, supporting PR's D&I objectives at scale.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever applied AI bias auditing to its HireVue and Pymetrics recruitment assessments, using diverse 100,000+ hire training datasets and transparency audits to neutralise bias, increasing diversity 16%. [https://reruption.com/en/knowledge/industry-cases/unilevers-ai-hiring-90-faster-16-more-diverse]\n2. L'Oreal deployed Seedlink AI interview scoring for intern selection, explicitly prioritising trustworthy bias-free AI and resulting in the most diverse intern hire cohort in the programme's history. [https://www.hrmagazine.co.uk/content/features/loreal-ai-can-diversify-talent-acquisition]"
+              },
+              {
+                "name": "Big data",
+                "description": "Big data refers to extremely large, fast-moving, and varied datasets - generated by transactions, sensors, social media, and digital interactions - that require specialised infrastructure to process and analyse at scale. Organisations that harness big data gain competitive advantages in demand forecasting, customer personalisation, and operational performance management.",
+                "source": "Cosmos 1.0",
+                "implications": "Workforce analytics using big data allow benchmarking of talent composition and pay equity across PR's 80+ nationalities against external market benchmarks.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based performance analytics identify high-potential employees earlier and model flight risk, enabling proactive retention conversations in a group where talent is a key competitive differentiator.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Nestle's People Analytics team used logistic regression, supervised ML, clustering, and survival analysis to predict employee attrition and identify five key flight-risk drivers among UK employees. [https://www.myhrfuture.com/digital-hr-leaders-podcast/2019/7/22/nestles-people-analytics-journey]\n2. Unilever implemented predictive attrition modelling with ML, enabling proactive retention interventions for high-risk technical talent and reducing regrettable turnover in engineering roles by 25% over 18 months. [https://bernardmarr.com/the-amazing-ways-how-unilever-uses-artificial-intelligence-to-recruit-train-thousands-of-employees/]"
+              }
+            ]
+          },
+          {
+            "name": "Workforce planning",
+            "description": "Workforce planning, scheduling, forecasting, and reporting.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI-driven workforce intelligence platforms move HR from lagging to leading indicators, enabling proactive talent gap identification before shortages materialise.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Coca-Cola Europacific Partners deployed Eightfold AI Talent Management for 41,000 employees in 31 countries, using AI talent intelligence to surface skills gaps, digitise 500+ succession plans, and improve internal mobility above 40%. [https://eightfold.ai/customers/customer-stories/coca-cola-europacific-partners-addresses-skills-gaps-with-eightfold/]\n2. Unilever uses Gloat AI workforce-planning platform to map 80,000+ tasks across full-time, gig, and contract roles over a five-year horizon, accelerating skills-based internal mobility. [https://resources.gloat.com/impacts/unilever-developed-a-future-proof-workforce/]\n3. Diageo uses AI to analyse business strategies and employee data to identify critical future skills and generate individual upskilling roadmaps aligned to its 2030 digital strategy. [https://www.diageo.com/en/careers/why-diageo/digital-acceleration]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML models integrate headcount history, attrition patterns, business growth projections, and external labour market signals to generate dynamic workforce demand forecasts 12–18 months ahead.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Nestle's HR team deployed ML and predictive analytics to build a dashboard of people skills and capabilities by department and location, feeding its '4B' strategic workforce planning methodology. [https://www.myhrfuture.com/digital-hr-leaders-podcast/nestles-4b-methodology-to-strategic-workforce-planning]\n2. Coca-Cola partnered with Workera to use AI-powered skills assessments, measuring skills at granular level to close critical workforce capability gaps and guide targeted learning investments. [https://emerj.com/using-ai-to-close-skills-gaps-optimize-workforce-performance-leaders-workera-the-coca-cola-company/]\n3. Coca-Cola Europacific Partners used Eightfold ML talent intelligence to increase the share of employees with full talent profiles from 2% to 80%, enabling systematic skills gap identification across 31 countries. [https://eightfold.ai/learn/coca-cola-europacific-partners-addresses-skills-gaps-enterprise-talent-intelligence-case-study/]"
+              },
+              {
+                "name": "Simulation",
+                "description": "Simulation uses computational models to replicate the behaviour of complex real-world systems - from manufacturing lines to supply chains and financial markets - enabling organisations to stress-test scenarios, optimise processes, and de-risk decisions before committing to real-world action.",
+                "source": "Cosmos 1.0",
+                "implications": "Workforce simulation models test the impact of restructuring, upskilling, or M&A scenarios on headcount requirements before decisions are finalised.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever developed a scenario-based workforce planning methodology with Gloat, building a skills ontology framework and multiple plausible future business scenarios, enabling 25% reduction in external hiring costs. [https://resources.gloat.com/impacts/unilever-developed-a-future-proof-workforce/]\n2. Nestle applies scenario simulation within its '4B' workforce planning cycle, regularly re-running scenarios on workforce transformation and adjusting hiring, build, and automation forecasts accordingly. [https://www.myhrfuture.com/digital-hr-leaders-podcast/nestles-4b-methodology-to-strategic-workforce-planning]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Legal & Other Corporate",
+        "productFamilies": [
+          {
+            "name": "Audit",
+            "description": "Internal and external audit activities for the group.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI-driven continuous audit systems detect patterns of control weakness or fraud across the full population of transactions, reducing audit cost and improving risk coverage.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Diageo uses AI-powered anomaly detection and what-if modelling via Strategy software across its 138 global production sites. [https://www.strategysoftware.com/customer-stories/diageo]\n2. AB InBev deployed Fujitsu/SettleMint blockchain with integrated audit trail across its barley supply chain in Europe. [https://www.edie.net/from-barley-to-bar-ab-inbev-pilots-blockchain-to-boost-transparency-and-traceability/]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML can analyse 100% of transactions rather than samples, transforming audit from retrospective sampling to continuous assurance – particularly valuable across PR's complex multi-entity structure.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Microsoft (internal) – Microsoft’s internal Audit, Risk, and Compliance (ARC) team uses ML-based audit digitization to automatically flag suspicious invoices, including detecting reused images and patterns at a scale that manual testing cannot match. [https://www.microsoft.com/insidetrack/blog/boosting-internal-audits-at-microsoft-with-audit-digitization-machine-learning/]\n2. KPMG embeds AI and data analytics into its audit methodology to deliver risk‑based, data‑driven audits, continuously scanning large data sets for anomalies and patterns.[https://kpmg.com/xx/en/what-we-do/services/audit/ai-and-technology.html]\n3. PwC uses AI/ML on general ledger data to automatically review millions of transactions, surface outliers, and focus auditors on potential fraud or error. [https://chirpn.com/insight-details/how-to-automate-audit-processes-with-artificial-intelligence]"
+              },
+              {
+                "name": "Quantum Computing",
+                "description": "Quantum computing refers to next-generation computers that operate on the basis of quantum mechanical states rather than physical laws. (EconSight 100 Game Changers – Digitization)",
+                "source": "EconSight",
+                "implications": "Quantum-enabled pattern detection will process audit populations orders of magnitude larger than today's systems, enabling true real-time assurance across all affiliates simultaneously.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Corporate Relations",
+            "description": "Manage public and government affairs.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI media monitoring and sentiment analysis platforms track PR brand perception across 70+ markets in real time, enabling the Corporate Relations team to respond to emerging reputational issues before they escalate. GenAI assists in drafting stakeholder communications, position papers, and regulatory responses at scale and speed, freeing senior public affairs professionals for strategic relationship-building.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever deployed AI across 26 data centres for social listening and media monitoring, decoding conversations in multiple languages at scale. [https://consumergoods.com/unilever-bolsters-social-listening-strategy-ai]\n2. Coca-Cola's Microsoft partnership includes testing Copilot for summarising communications and generating business content for 700,000 employees. [https://www.coca-colacompany.com/media-center/the-coca-cola-company-and-microsoft-announce-five-year-strategic-partnership-to-accelerate-cloud-and-generative-ai-initiatives]\n3. Nestle rolled out NesGPT internally in 2023, saving employees 45 minutes per week on tasks including drafting content and internal communications. [https://www.worklife.news/technology/nesgpt-nestle-genai/]"
+              }
+            ]
+          },
+          {
+            "name": "Corporate strategy",
+            "description": "Align business goals with finance, supply chain, product development, and marketing.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered market intelligence platforms synthesise signals from patents, academic publications, startup databases, and news to inform technology strategy decisions at Group level.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Heineken's AIDDA ML platform scaled to eight markets by 2024, using predictive modelling to support sales and competitive strategy decisions. [https://www.theheinekencompany.com/newsroom/brewing-with-ai/]\n2. Diageo uses AI Palette ML tools to scan social media and menus to identify emerging flavour trends for strategic brand decisions. [https://www.marketingweek.com/diageo-ai-real-customers/]"
+              },
+              {
+                "name": "Simulation",
+                "description": "Simulation uses computational models to replicate the behaviour of complex real-world systems - from manufacturing lines to supply chains and financial markets - enabling organisations to stress-test scenarios, optimise processes, and de-risk decisions before committing to real-world action.",
+                "source": "Cosmos 1.0",
+                "implications": "Agent-based simulations and system dynamics models allow the strategy team to test portfolio and M&A scenarios before committing capital, reducing decision risk.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. AB InBev implemented o9 Solutions for end-to-end scenario planning and simulation, covering 60% of sold volume across Colombia, Europe, US, China, Mexico, Brazil and Canada by 2022. [https://o9solutions.com/articles/ab-inbevs-future-ready-recipe-for-digital-transformation-success]\n2. Unilever automated ML-driven economic scenario simulations generating multivariate budget projections incorporating real-time inflation and commodity data. [https://www.klover.ai/unilever-ai-strategy-analysis-of-dominance-in-consumer-packaged-goods/]"
+              },
+              {
+                "name": "Quantum Computing",
+                "description": "Quantum computing refers to next-generation computers that operate on the basis of quantum mechanical states rather than physical laws. (EconSight 100 Game Changers – Digitization)",
+                "source": "EconSight",
+                "implications": "Quantum optimisation algorithms will enable the strategy function to model complex multi-variable market scenarios (tariffs, climate scenarios, demand shifts) simultaneously at global scale – well beyond the reach of current computing.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Internal Control",
+            "description": "Processes and records ensuring integrity of financial and accounting information.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based anomaly detection in financial and operational data provides a continuous internal control layer, flagging unusual patterns that manual controls would miss.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Siemens uses AI-based continuous monitoring integrated with its business systems to track operational and compliance data. The system detects control breaches and anomalies in near real time, improving effectiveness of process controls and reducing time to complete control testing and audits. [https://smartdev.com/ai-use-cases-in-internal-audit/]\n2. JPMorgan Chase uses AI (Watson-based) to analyze large volumes of transactional data and flag irregularities in real time, effectively acting as a detective control over payment and account activity. This reduces fraud‑detection time and supports more reliable financial records. [https://smartdev.com/ai-use-cases-in-internal-audit/]"
+              },
+              {
+                "name": "Blockchain",
+                "description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.",
+                "source": "Cosmos 1.0, EconSight",
+                "implications": "Blockchain creates an immutable record of control-relevant transactions, making segregation-of-duties violations and post-hoc data manipulation immediately detectable.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. AB InBev partnered with Fujitsu and SettleMint to deploy a blockchain ledger creating a tamper-proof audit trail from barley farmers through maltsters to brewery. [https://www.edie.net/from-barley-to-bar-ab-inbev-pilots-blockchain-to-boost-transparency-and-traceability/]\n2. Unilever piloted SAP GreenToken blockchain to create immutable traceability records for its palm oil supply chain as a compliance evidence mechanism. [https://www.unilever.com/news/press-and-media/press-releases/2022/sap-unilever-pilot-blockchain-technology-supporting-deforestationfree-palm-oil/]"
+              }
+            ]
+          },
+          {
+            "name": "Internal communications",
+            "description": "Enable effective communication and collaboration within the company.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI-powered internal communication platforms personalise content for each employee by role, language, and location – critical for a group of 19,000 employees across 70+ countries. GenAI translates and localises internal communications instantly into all required languages, ensuring consistent messaging across PR's 70+ market presence without proportional translation cost.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Nestle deployed NesGPT internally in August 2023, enabling 7,000+ US employees to draft, translate and summarise internal content, saving 45 minutes per employee per week. [https://www.worklife.news/technology/nesgpt-nestle-genai/]\n2. Heineken added GenAI to its internal KIM platform, allowing its 2,000-strong global insights team to query 8,000+ reports conversationally and save approximately 1,553 hours per week. [https://consumergoods.com/heineken-elevates-knowledge-insights-management-generative-ai]\n3. Coca-Cola is piloting Microsoft Copilot for M365 to help employees summarise and generate internal business communications across its global workforce. [https://www.coca-colacompany.com/media-center/the-coca-cola-company-and-microsoft-announce-five-year-strategic-partnership-to-accelerate-cloud-and-generative-ai-initiatives]"
+              },
+              {
+                "name": "Extended Reality (XR)",
+                "description": "Extended Reality encompasses VR, AR, and Mixed Reality under a single umbrella. XR headsets create immersive environments for enterprise training, remote collaboration, and consumer entertainment. Tech Opportunity Score: 9/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "XR-powered virtual town halls and immersive brand experience sessions for employees strengthen culture and belonging in a geographically dispersed, post-pandemic hybrid workforce.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "Heineken uses AR/GPS technology in its Den Bosch and Zoeterwoude breweries to onboard new employees, guiding them through the plant with location-triggered information. [https://consumergoods.com/ar-metaverse-heineken-and-eyebobs-embrace-digital-experiences]"
+              }
+            ]
+          },
+          {
+            "name": "Legal & Compliance",
+            "description": "Align the organisation with laws, regulations, and guidelines relevant to its business.",
+            "technologies": [
+              {
+                "name": "Legal technology",
+                "description": "Legal technology (LegalTech) applies AI, software, and data analytics to legal and compliance processes - including contract review, regulatory monitoring, e-discovery, and risk assessment. By automating routine legal tasks, LegalTech reduces the cost and time of legal work while improving accuracy and regulatory coverage.",
+                "source": "Cosmos 1.0",
+                "implications": "LegalTech platforms automate contract review, regulatory monitoring, and compliance reporting across 70+ markets – critical for a spirits group navigating complex alcohol advertising, labelling, and distribution regulations globally.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "Unilever's legal team is deploying GenAI in its three global Legal Powerhouses to conduct research, draft letters and review contracts. [https://www.unilever.com/news/news-search/2024/legal-leadership-harnessing-genai-to-revolutionise-our-legal-teams/]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML models continuously screen regulatory databases and flag changes relevant to PR's product portfolio (health claims, ingredient labelling, packaging requirements).",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "Unilever's cross-functional AI assurance process uses ML-based review to assess proposed AI deployments for regulatory compliance with the EU AI Act. [https://www.unilever.com/news/news-search/2024/the-eu-ai-act-has-arrived-how-unilever-is-preparing/]"
+              },
+              {
+                "name": "Blockchain",
+                "description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.",
+                "source": "Cosmos 1.0, EconSight",
+                "implications": "Immutable blockchain records of regulatory submissions, product registrations, and audit events provide a tamper-proof compliance audit trail across all affiliates.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever deployed SAP GreenToken blockchain to create auditable, immutable compliance records for deforestation-free palm oil sourcing aligned with regulatory requirements. [https://www.unilever.com/news/press-and-media/press-releases/2022/sap-unilever-pilot-blockchain-technology-supporting-deforestationfree-palm-oil/]\n2. Hennessy joined the Aura Blockchain Consortium in 2022 to create legally-recognised digital authenticity certificates for its Paradis collector editions sold in China. [https://packagingeurope.com/news/hennessy-cognac-joins-blockchain-consortium-built-for-luxury-brands/8075.article]"
+              },
+              {
+                "name": "Cryptography",
+                "description": "The science of securing information. Key developments include post-quantum cryptography, zero-knowledge proofs, blockchain, and central bank digital currencies (CBDCs). Post-quantum cryptography is essential to protect data against future quantum computer threats. (Stanford Emerging Technology Review 2025)",
+                "source": "Stanford",
+                "implications": "Post-quantum cryptography protects the confidentiality of sensitive legal documents, merger communications, and regulatory filings from future quantum decryption attacks – critical for a group managing commercially sensitive IP.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "M&A",
+            "description": "Support growth strategy through acquisitions and new market entry.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI accelerates financial modelling and document review in due diligence, compressing deal timelines and reducing advisory costs.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "(No specific company name is mentioned) Investment and M&A users apply its AI Screener to identify public and private company targets matching custom financial and strategic criteria across filings, transcripts and news. [https://www.thisisayu.com/journal/top-ai-use-cases-for-investment-firms]"
+              },
+              {
+                "name": "Big data",
+                "description": "Big data refers to extremely large, fast-moving, and varied datasets - generated by transactions, sensors, social media, and digital interactions - that require specialised infrastructure to process and analyse at scale. Organisations that harness big data gain competitive advantages in demand forecasting, customer personalisation, and operational performance management.",
+                "source": "Cosmos 1.0",
+                "implications": "Big data enables richer commercial due diligence by aggregating consumer, competitor, and channel data that is difficult to obtain through traditional desk research.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "Deloitte – Advises investment managers on integrating alternative data (transactions, web, geolocation, etc.) into investment and DD processes. [https://www.deloitte.com/us/en/insights/industry/financial-services/alternative-data-for-investors-from-discovery-to-institutionalization.html]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based target screening tools analyse thousands of companies against PR's strategic criteria (brand positioning, distribution footprint, growth potential) to surface high-fit acquisition targets earlier.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "Inven is AI platform used by corporate development and PE teams to search across millions of companies and automatically highlight best‑fit targets by revenue range, size, ownership and other criteria. [https://www.inven.ai/articles/ai-for-ma-deal-sourcing]"
+              }
+            ]
+          },
+          {
+            "name": "Real estate",
+            "description": "Administer real estate from site selection to construction, property management, and physical security.",
+            "technologies": [
+              {
+                "name": "Digital Twin",
+                "description": "Digital twin describes the digital mapping and modeling of real or unreal objects, right up to a complete manufacturing plant. The aim is to test the functionality or simulation of processes. Digital Twin can be used also for predictive maintenance or remote process control. (EconSight 100 Game Changers – Industry, Digitization)",
+                "source": "EconSight",
+                "implications": "A digital twin of the real estate portfolio enables energy consumption simulation, space utilisation optimisation, and remote facility management, reducing operating costs across PR's global site network.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever deployed digital twins across eight global factory regions for facilities management, achieving energy optimisation, cost savings, and productivity gains including a 21% reduction in virgin plastic at Tinsukia. [https://technologymagazine.com/articles/how-unilever-uses-ai-digital-twins-for-sustainability]\n2. Unilever's Indaiatuba, Brazil factory uses a digital twin with ML to predict optimal process parameters and improve thermal energy efficiency. [https://www.unilever.com/news/news-search/2023/unilever-sites-join-network-of-worlds-most-digitally-advanced-factories/]"
+              },
+              {
+                "name": "Internet of things",
+                "description": "The Internet of Things (IoT) connects physical devices - sensors, machines, and smart objects - to each other and to cloud platforms, enabling real-time data collection and exchange at scale. IoT powers remote monitoring, predictive maintenance, and operational optimisation across manufacturing, logistics, and facilities management.",
+                "source": "Cosmos 1.0",
+                "implications": "IoT sensors embedded in buildings monitor energy, HVAC, occupancy, and security in real time, enabling predictive maintenance and reducing operational cost and carbon footprint.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Robotics and Autonomous Systems",
+                "description": "An integrative field drawing on advances in AI, sensors, actuators, and mechanical engineering. Physical robots increasingly work alongside humans in manufacturing, logistics, agriculture, and services. (Stanford Emerging Technology Review 2025)",
+                "source": "Stanford",
+                "implications": "Autonomous security robots and inspection drones can patrol large manufacturing and logistics sites around the clock, reducing security costs and improving physical asset monitoring.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. KABAM – Halo security robots at a large overseas industrial facility. 24/7 autonomous patrolling of a large industrial site (perimeter, restricted zones, emergency routes). Robots use cameras, thermal sensors, and smoke / fire detection to spot intrusions, unattended bags, people lying on the ground, and hazards, then auto‑alert the control centre and issue audible warnings. [https://kabam.ai/blog/how-security-robots-are-safeguarding-modern-manufacturing-facilities/]\n2. Knightscope – autonomous security robots for manufacturing & distribution centers: Deployed in US manufacturing plants, warehouses, and distribution centers to patrol corridors, yards, car parks and perimeters. Robots stream 360° video, license‑plate reads, and thermal data into security operations; they are specifically marketed as a way to reduce guard headcount while increasing coverage and deterrence. [https://knightscope.com/use-cases/manufacturing]\n3. Dow – autonomous drones on Gulf Coast manufacturing complexes: Dow uses autonomous drones to patrol miles of fence line around large chemical and manufacturing facilities. Drones provide real‑time video, night vision and thermal imagery, enabling rapid response to intrusions or incidents and proving cost‑effective versus manual patrols. [https://innovateenergynow.com/resources/autonomous-drones-in-manufacturing-site-security]"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Customer, Consumer & Channels",
+    "portfolios": [
+      {
+        "name": "Channel",
+        "productFamilies": [
+          {
+            "name": "Experience centers and stores",
+            "description": "Offline direct-to-consumer sales and experience centres.",
+            "technologies": [
+              {
+                "name": "Virtual reality",
+                "description": "Virtual Reality (VR) immerses users in fully computer-generated, three-dimensional environments experienced through a headset. Beyond entertainment, VR is increasingly adopted for immersive workforce training, virtual brand experiences, and complex simulation scenarios that would be costly or risky to conduct in the real world.",
+                "source": "Cosmos 1.0",
+                "implications": "VR transports visitors to the Chivas Regal distillery in Strathisla or the Martell cognac cellars in Cognac without leaving the experience centre – creating an emotionally powerful brand connection.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. L'Oreal's NYX brand partnered with Samsung to deliver in-store VR experiences, while its ModiFace AR mirrors are deployed across retail partner stores globally. [https://www.marketingdive.com/news/loreals-nyx-brand-partners-with-samsung-for-in-store-vr/512803/]\n2. LVMH's Hennessy showcased Ampelos, a VR-powered grape-vine pruning simulator, as an in-person brand experience at VivaTech 2024. [https://www.lvmh.com/en/news-lvmh/lvmh-takes-viva-technology-2024-visitors-into-its-dream-garden]\n3. Diageo deployed a VR/AR live concert experience in physical venues for Johnnie Walker's 'Walk Beyond' campaign in the Philippines. [https://www.deloitte.com/uk/en/about/story/impact/johnnie-walker-is-striding-into-the-metaverse.html]"
+              },
+              {
+                "name": "Haptics",
+                "description": "Haptic feedback is the synthetic reproduction of the sense of touch. It is expected to be widely adopted in virtual/immersive environments, enabling users to feel textures, temperature and resistance digitally. Tech Opportunity Score: 10/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Haptic gloves in experience centres allow visitors to 'feel' the weight and texture of a cask or bottle in a virtual distillery tour, adding a multisensory dimension to brand immersion.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "Gucci, Louis Vuitton, Chanel, Burberry, and Bang & Olufsen lead with digital stores where you \"feel\" fabrics, leather finishes, or button clicks via vibrations on your phone/tablet. Gucci reports +25% online sales; Burberry uses it for trench coat fabrics to cut returns. Perfect for spirits too—imagine \"feeling\" premium bottle texture on D2C. [https://essfeed.com/how-luxury-brands-use-haptic-technology-to-simulate-fabric-touch-in-digital-stores/]"
+              },
+              {
+                "name": "Virtual Scents",
+                "description": "Virtual Scents are technologies that can digitally recreate the sense of smell through odorama-type technology (diffusers that scatter scent particles) or electro-stimulation in the nose. Tech Opportunity Score: 3/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Digital scent diffusers timed to VR distillery tours recreate the aroma of barrel warehouses, peated malts, or fruit esters – making the brand story tangible and memorable for premium consumers.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Virtual Taste Simulators",
+                "description": "Virtual Taste Simulators are technologies that can digitally recreate the sense of taste, usually achieved through electro-stimulation on the tongue that tricks taste receptor cells. Tech Opportunity Score: N/A. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "In a 2032+ horizon, electro-stimulation taste simulators could allow experience centre visitors to 'taste' flavour profiles of rare or vintage expressions without consuming alcohol – opening accessibility and regulatory innovation.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Omnisales - 3P online sales",
+            "description": "Manage third-party online sales channels: e-Commerce, social media sales.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-driven demand forecasting for e-commerce channels prevents stockouts on high-velocity SKUs and reduces over-stock on platforms like Amazon, Tmall, or Drizly.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Recommender system",
+                "description": "Recommender systems use machine learning algorithms and behavioural data to surface the most relevant products, content, or actions for each individual user at any given moment. They are the engine behind personalisation in e-commerce, digital marketing, and content platforms, directly influencing conversion, engagement, and customer loyalty.",
+                "source": "Cosmos 1.0",
+                "implications": "Recommender engines on third-party e-commerce platforms increase basket size by surfacing complementary products (mixers, glassware, cocktail kits) alongside PR's spirits brands.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Non-Fungible Tokens (NFTs)",
+                "description": "Non-fungible tokens (NFTs) are unique digital assets recorded on the blockchain. They represent verifiable ownership of a unique digital (or physical) item. Tech Opportunity Score: 8/10. (BNP l'atelier Tech Radar – Access / Software)",
+                "source": "BNP l'atelier",
+                "implications": "NFT-based digital certificates of ownership for limited-edition bottlings create new premium revenue streams on secondary markets and build collector communities around brands like Chivas, Glenlivet, and Martell.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard existing NFTs\n1. Absolut Vodka – “The ABSOLUT Art of Togetherness” (Germany)\nPernod Ricard Germany ran an NFT art campaign for Absolut, commissioning digital artists to create NFT artworks around the theme of togetherness and distributing them as a brand experience/crypto‑art activation.\n2. House of Tequila – “NFT – Nice Freaking Tequila”\nPernod Ricard’s House of Tequila created its first NFT collection on OpenSea for the group’s global annual meeting, working with Mexican digital artists and auctioning the NFTs to raise funds for a children’s NGO.\n3. Group‑level Web3 program with Taurus\nPernod Ricard partnered with Taurus, a digital‑asset infrastructure provider, and is already “in production” issuing and managing NFTs for its brands, using Taurus’s platform to handle NFT lifecycle and custody.\n​\nOther benchmarks:\n1. Johnnie Walker launched seven limited-edition 'Masters of Flavour' NFTs on BlockBar.com at $35,000 each, selling out in three minutes via third-party e-commerce. [https://www.adobomagazine.com/campaign-spotlight/campaign-spotlight-johnnie-walkers-first-nft-collection-sells-out-in-three-minutes/]\n2. Hennessy launched its Cafe 11 NFT-based Web3 social-club loyalty programme with Friends With Benefits, giving holders access to curated community experiences. [https://www.ledgerinsights.com/lvmhs-hennessy-to-launch-nft-based-web3-social-club-cafe-11/]\n3. Bacardi launched a five-year NFT cask-finish rum series on blockchain, with each NFT granting ownership of a limited physical bottle, sold via digital marketplaces. [https://www.just-drinks.com/news/bacardi-readies-cask-finish-rum-line-with-nft-backing/]"
+              }
+            ]
+          },
+          {
+            "name": "Omnisales - Direct-to-consumer",
+            "description": "Direct-to-consumer sales channel: order processing, website/mobile management, digital activation.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI-powered personalisation engines on D2C websites adapt product recommendations, content, and offers in real time to each visitor's inferred preferences and purchase history. GenAI creates personalised cocktail recipes, gifting messages, and product narratives for each D2C customer, transforming a transactional purchase into a branded storytelling experience.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard is already advanced with AI for marketing and personalization. \nPernod Ricard is rolling out an internal suite of AI and GenAI tools (Maestria 2.0, Matrix, D‑STAR, Genie) that match the right brands to the right consumers, personalise digital journeys on D2C stores, and generate tailored marketing content—moving from one‑size‑fits‑all campaigns to data‑driven, personalised storytelling at scale.\n\nOther benchmarks:\n1. Diageo launched 'Elli', a GenAI virtual concierge for Seedlip's D2C site in November 2023 - Diageo's first global GenAI consumer service - offering personalised cocktail and gift recommendations. [https://www.voxlydigital.com/post/launching-diageo-s-first-generative-ai-consumer-service-globally]\n2. Diageo's 'Project Halo' GenAI experience at Johnnie Walker Princes Street lets D2C visitors co-design a personalised Blue Label bottle label. [https://www.diageo.com/en/news-and-media/press-releases/2024/diageo-unveils-its-first-bottle-personalisation-experience-fuelled-by-generative-ai]\n3. L'Oreal launched Beauty Genius in 2024, a GenAI-powered personal beauty assistant available on its D2C platform with personalised recommendations from 750+ L'Oreal Paris products. [https://news.modiface.com/newsroom/introducing-beauty-genius-your-personal-beauty-assistant-powered-by-ai]"
+              },
+              {
+                "name": "Digital Wallets",
+                "description": "A digital wallet is software that enables users to store, purchase, collect and send cryptocurrencies and other digital assets. Tech Opportunity Score: 6/10. (BNP l'atelier Tech Radar – Access / Software)",
+                "source": "BNP l'atelier",
+                "implications": "Integrated digital wallet checkout (Apple Pay, crypto wallets) reduces friction in the D2C purchase journey, particularly for younger premium consumers who expect seamless, multi-currency payment options.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "At Pernod Ricard, Patrón Tequila’s D2C store offers Apple Pay checkout on mobile, reducing friction for premium digital buyers who expect seamless payment experiences. Also, Pernod Ricard’s e‑commerce platforms (mentioned in strategy docs) list Apple Pay alongside Google Pay, PayPal, Visa/Mastercard, signaling a deliberate push for multi‑currency, low‑friction options on D2C brand stores."
+              },
+              {
+                "name": "Blockchain",
+                "description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.",
+                "source": "Cosmos 1.0, EconSight",
+                "implications": "Blockchain-based bottle authentication on the D2C channel allows consumers to verify the provenance and authenticity of premium spirits, commanding a price premium and protecting against counterfeiting.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard’s Chivas, Martell, and Tequila NFT bottles use NFC + blockchain so premium D2C buyers can verify authenticity and provenance at purchase/delivery, protecting margins against fakes.\n\nOther benchmarks:\nDiageo launched a blockchain-based track-and-trace system in 2022 enabling end consumers to scan QR/NFC tags on bottles to verify authenticity and origin direct from producer. [https://techobserver.in/2022/06/06/diageo-backs-blockchain-tech-to-track-down-pilferage-of-liquor-and-counterfeits/]\nHennessy partnered with the Aura Blockchain Consortium to provide consumers with a digital authenticity certificate for its Paradis collector edition directly at point of purchase in China. [https://www.pradagroup.com/en/news-media/press-releases-documents/2022/22-01-20-aura-partners-hennessy.html]"
+              }
+            ]
+          },
+          {
+            "name": "Prestige",
+            "description": "Niche market products for Prestige consumers of Pernod Ricard.",
+            "technologies": [
+              {
+                "name": "Blockchain",
+                "description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.",
+                "source": "Cosmos 1.0, EconSight",
+                "implications": "Blockchain-verified supply chains for ultra-premium spirits provide the irrefutable proof of provenance that high-net-worth consumers demand, protecting brand equity and enabling secondary market price discovery.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard's The Whisky Exchange launched a blockchain-backed marketplace in early 2024 for rare prestige whisky, underpinned by smart contracts guaranteeing provenance and authenticity. [https://whiskymag.com/articles/the-whisky-exchange-launches-blockchain-backed-marketplace-for-rare-whisky-sales/]\n\nOther benchmarks:\nHennessy joined the Aura Blockchain Consortium to deliver full supply-chain traceability from distillery to consumer for its prestige cognac lines. [https://packagingeurope.com/news/hennessy-cognac-joins-blockchain-consortium-built-for-luxury-brands/8075.article]\nJohnnie Walker (Diageo) added blockchain-anchored NFTs to its limited-edition Ghost and Rare Port Dundas release via BlockBar, with immutable provenance records for the prestige collector set. [https://drinks-intel.com/news/ghost-and-rare-line-switches-to-nft-for-johnnie-walker/]"
+              },
+              {
+                "name": "Non-Fungible Tokens (NFTs)",
+                "description": "Non-fungible tokens (NFTs) are unique digital assets recorded on the blockchain. They represent verifiable ownership of a unique digital (or physical) item. Tech Opportunity Score: 8/10. (BNP l'atelier Tech Radar – Access / Software)",
+                "source": "BNP l'atelier",
+                "implications": "NFT-backed provenance certificates for ultra-premium bottlings (e.g., Royal Salute, Louis XIII) create digital-physical hybrid collectibles that command significant premiums in the collector market.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard has multiple NFTs projects\" \nAbsolut Vodka (\"The ABSOLUT Art of Togetherness\") – NFT campaign commissioning digital artists for crypto-art drops linked to brand experiences.\nHouse of Tequila (\"Nice Freaking Tequila\") – First NFT collection on OpenSea for global events, with proceeds to charity.\nRicard – Web3 pastis NFTs at NFT Paris as certificates of authenticity, tied to personalized bottle experiences and exclusive events.\nRoyal Salute & Martell – Early NFT sales highlighted in annual reports as part of prestige digital activations.\n\nOther benchmarks:\nHennessy launched its first NFT collection on BlockBar in January 2022 - 250 bottles of Hennessy 8 cognac at $226,450 per unit, with each NFT serving as proof of digital and physical ownership. [https://boardroom.tv/hennessy-nft-blockbar-cognac/]\nJohnnie Walker (Diageo) released seven 'Masters of Flavour' prestige NFTs at $35,000 each on BlockBar, with smart-contract verification of ownership of 48-year-old whiskies from closed distilleries. [https://www.adobomagazine.com/campaign-spotlight/campaign-spotlight-johnnie-walkers-first-nft-collection-sells-out-in-three-minutes/]\nBacardi launched a five-year prestige NFT series starting with the Reserva Ocho Sherry Cask Finish, granting holders verified digital ownership of the limited physical bottle. [https://bartenderspiritsawards.com/en/blog/insights-1/spirits-brands-that-have-succeeded-in-the-world-of-nfts-420.htm]"
+              },
+              {
+                "name": "AI Avatar",
+                "description": "Avatars are graphical representations of a user or object in a virtual environment. AI Avatars use machine learning to create autonomous, adaptive representations that can act as virtual assistants or brand ambassadors. Tech Opportunity Score: 9/10. (BNP l'atelier Tech Radar – Access / Software)",
+                "source": "BNP l'atelier",
+                "implications": "Ultra-personalised AI concierge services powered by sophisticated digital humans provide UHNW customers with white-glove spirits advice, bespoke gifting curation, and cellar management services.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Haptics",
+                "description": "Haptic feedback is the synthetic reproduction of the sense of touch. It is expected to be widely adopted in virtual/immersive environments, enabling users to feel textures, temperature and resistance digitally. Tech Opportunity Score: 10/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Haptic-enabled remote luxury experiences (e.g., a curated tasting at Louis XIII guided by a digital sommelier with tactile feedback) redefine premium experiential commerce beyond physical boundaries.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Pilot",
+                "successfulCases": "Gucci, Louis Vuitton, Chanel, Burberry, and Bang & Olufsen lead with digital stores where you \"feel\" fabrics, leather finishes, or button clicks via vibrations on your phone/tablet. Gucci reports +25% online sales; Burberry uses it for trench coat fabrics to cut returns. Perfect for spirits too—imagine \"feeling\" premium bottle texture on D2C. [https://essfeed.com/how-luxury-brands-use-haptic-technology-to-simulate-fabric-touch-in-digital-stores/]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Consumer",
+        "productFamilies": [
+          {
+            "name": "Activation, personalization & measurement",
+            "description": "Marketing strategy: target consumers, execute marketing plan, and measure impact.",
+            "technologies": [
+              {
+                "name": "Emotion Recognition",
+                "description": "Emotion recognition devices detect the emotional state of humans by analyzing face images, measuring pulse, body temperature or voice pitch. (EconSight 100 Game Changers – Digitization, Human-Machine-Interaction)",
+                "source": "EconSight",
+                "implications": "Emotion recognition tools measure consumer emotional response to ads, packaging, and in-store displays through facial expression analysis, providing richer, faster feedback than traditional focus groups.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Mars used Realeyes facial emotion recognition to test 149 ads across 35 brands, improving sales prediction accuracy to 75%. [https://blog.realeyesit.com/i-com-data-creativity-award]\n2. PepsiCo and Mars tested ad concepts using Realeyes emotional engagement scores before large-scale campaign release. [https://www.realeyesit.com/technology/emotion/]\n3. Unilever brand Sedal used Memorable AI's attention and emotion models on 130+ ad assets, lifting ad recall by 5.5%. [https://www.ldv.co/blog/unilever-and-loral-brands-leverage-the-ai-powered-platform-memorable-to-maximize-the-memorability-saliency-and-conversion-potential-of-their-ads]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "Real-time ML personalisation engines serve different creative assets, offers, and calls to action to different consumer segments simultaneously, improving conversion rates and media efficiency.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard's existing KDPs: Maestria, Matrix, D-Star, Rev'Up"
+              },
+              {
+                "name": "Affective Computing",
+                "description": "Affective Computing is a set of technologies designed to collect behavioural or physiological data in order to detect, monitor and analyse human emotions. Tech Opportunity Score: 7/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Affective computing platforms that monitor physiological signals (heart rate, skin conductance) during consumer experiences provide a deeper, unconscious measure of brand engagement than survey-based methods.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever uses neuro-signaling and skin conductance to measure how sensory triggers, such as the fragrance of a soap or the texture of a lotion, affect a person’s mood before they can even describe it. By tracking these unconscious physiological responses, they can prove that a specific scent makes a consumer feel more confident or relaxed, which is far more accurate than asking them to remember how they felt in a traditional survey. [https://www.unilever.com/news/news-search/2025/how-neurosignalling-is-driving-product-innovation-at-unilever/]\n2. Coca-Cola famously used brain imaging and heart rate monitoring to discover that brand loyalty is often stronger than taste preference. Their research showed that the \"Coke\" brand triggers the brain's memory and emotional centers so intensely that it actually changes how the drink tastes to the consumer. This data helped them understand that their marketing was creating a deep, unconscious emotional bond that a simple \"Which do you like better?\" survey could never fully capture. [https://jier.org/index.php/journal/article/download/2582/2115/4572]"
+              },
+              {
+                "name": "Brain-Computer Interface",
+                "description": "BCI (Brain-Computer Interface) enables direct communication between the human brain and external devices. It captures neural signals and translates them into commands, with applications in accessibility, gaming, and consumer neuromarketing. Tech Opportunity Score: 7/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Non-invasive EEG-based consumer neuroscience tools measure neural responses to brand stimuli (TV ads, packaging, aromas) without respondent self-reporting – delivering the deepest possible measure of emotional resonance with premium brand positioning.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Pilot",
+                "successfulCases": "1. L'Oréal established partnership with Emotiv to use EEG headsets for helping customers select fragrances based on subconscious emotional triggers. [https://www.google.com/search?q=https://www.loreal.com/en/articles/science-and-technology/loreal-and-emotiv-unveil-the-future-of-fragrance-selection/]\n2. Unilever uses neuro-signaling to measure how fragrances affect emotional and self-processing brain regions within milliseconds. [https://www.unilever.com/news/news-search/2025/how-neurosignalling-is-driving-product-innovation-at-unilever/]"
+              }
+            ]
+          },
+          {
+            "name": "Consumer Data",
+            "description": "Facilitate consumer analysis through data: consumer identity & access management, consumer data platforms.",
+            "technologies": [
+              {
+                "name": "Big data",
+                "description": "Big data refers to extremely large, fast-moving, and varied datasets - generated by transactions, sensors, social media, and digital interactions - that require specialised infrastructure to process and analyse at scale. Organisations that harness big data gain competitive advantages in demand forecasting, customer personalisation, and operational performance management.",
+                "source": "Cosmos 1.0",
+                "implications": "Big data ingestion from social media, scan data, loyalty programmes, and first-party sources gives the group a 360-degree view of consumer behaviour across its portfolio.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered consumer data platforms unify identity, purchase, and engagement data across all touchpoints (retail, D2C, on-trade) into a single consumer profile – the foundation of personalised marketing at scale.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Homomorphic encryption",
+                "description": "Homomorphic encryption is an advanced cryptographic technique that allows computations to be performed directly on encrypted data without ever decrypting it. This enables privacy-preserving analytics, secure cloud processing, and confidential data collaboration between organisations that cannot legally or commercially share raw data.",
+                "source": "Cosmos 1.0",
+                "implications": "Homomorphic encryption allows PR to run analytics on encrypted consumer data without decrypting it, enabling privacy-preserving consumer insights that comply with GDPR and emerging data regulations.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Biotechnology and Synthetic Biology",
+                "description": "Biotechnology involves using living systems and organisms to develop products. Synthetic biology uses engineering tools to modify or create biological functions. Key advances include CRISPR gene-editing, directed evolution, metabolic engineering, and microbiome engineering. (Stanford Emerging Technology Review 2025)",
+                "source": "Stanford",
+                "implications": "Advances in epigenomics and microbiome science may allow PR's consumer research teams to understand biological drivers of taste preference and alcohol metabolism – a bold frontier for truly personalised product recommendations.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever launched in 2024 a dishwashing liquid (Quix) featuring RhamnoClean technology, which uses bacteria to turn agricultural waste into a natural, 100% biodegradable surfactant. [https://www.unilever.com/our-company/innovation-and-rd-at-unilever/unilevers-scientific-expertise/]\n2. L'Oréal uses bacterial fermentation to produce \"Life Plankton\" for their Biotherm brand and have partnered with biotech firms like Future Origins to develop sustainable alternatives to traditional cosmetic surfactants. [https://www.loreal.com/en/articles/science-and-technology/green-sciences-noveal/]"
+              }
+            ]
+          },
+          {
+            "name": "Planning and effectiveness",
+            "description": "Enable planning and efficiency in answering consumer needs.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "GenAI enables rapid creative testing by generating and evaluating hundreds of campaign variants, compressing the creative development and testing cycle from weeks to days.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Tranform",
+                "successfulCases": "At Pernod Ricard, we have the project Next-Gen Marketing that corresponds to this technology.\n\nOther benchmarks:\nL'Oreal deployed its AI tool Tidal to automate paid media buying, achieving 22% media efficiency gains in a Nordic pilot. [https://www.thinkwithgoogle.com/intl/en-emea/marketing-strategies/data-and-measurement/marketing-mix-modelling-with-loreal/]\nL'Oreal uses marketing mix modelling with AI to answer strategic and operational ROI questions and allocate A&P spend. [https://www.warc.com/newsandopinion/opinion/loreal-on-the-keys-to-success-for-marketing-mix-modelling/en-gb/6304]\nCoca-Cola partnered with OpenAI and Microsoft Azure to experiment with GenAI applications for campaign planning and marketing workflows. [https://consumergoods.com/coca-cola-signs-early-partner-openais-chatgpt-dall-e-generative-ai]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based marketing mix modelling (MMM) decomposes the sales contribution of each marketing investment with greater accuracy and speed than traditional econometrics, enabling faster planning cycles.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Tranform",
+                "successfulCases": "Pernod Ricard is advanced in using MMM to predict marketing effectiveness with its Key Digital Program named Matrix.\n\nOther benchmarks:\nAB InBev's Global Resource Allocator uses ML models to optimally allocate marketing budgets and maximise net revenue across brands and regions. [https://wowlabz.com/portfolio/abinbev-gra/]\nL'Oreal uses an AI attribution platform via Choreograph to measure paid social efficiency, achieving a 22% improvement. [https://www.choreograph.com/resource/loreal-super-charges-paid-social-efficiency-by-22-percent]\nCoca-Cola measures all campaign results using ML-driven ROI and brand-power metrics to ensure marketing investment drives real sales. [https://www.marketingweek.com/ab-inbev-marketing-effectiveness/]"
+              }
+            ]
+          },
+          {
+            "name": "Strategy & Portfolio",
+            "description": "Consumer strategy and portfolio management.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-driven portfolio analysis identifies cannibalisation between brands, white-space opportunities, and optimal price ladder positioning across the group's 240+ brands.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Tranform",
+                "successfulCases": "Pernod Ricard has Key Digital Programs (KDP) such as Maestria, Matrix, D-Star.\n\nOther benchmarks:\nUnilever uses a data-driven ML tool for SKU-level portfolio analysis to decide which products to keep, discontinue, or develop. [https://www.unilever.com/news/news-search/2022/using-ai-to-optimise-our-portfolio-and-fuel-growth/]\nUnilever's People Data Centre ingests social and purchase data via ML across 30 centres in 27 languages to fuel brand and portfolio decisions. [https://www.unilever.com/news/news-search/2025/sxsw-ai-machine-learning-and-data-behind-unilevers-latest-launches/]\nDiageo uses its proprietary AI Foresight System to analyse 160 million online conversations, informing brand portfolio and strategy decisions. [https://consumergoods.com/diageo-creates-cross-industry-ai-enabled-think-party-pin-down-consumer-trends]"
+              },
+              {
+                "name": "Simulation",
+                "description": "Simulation uses computational models to replicate the behaviour of complex real-world systems - from manufacturing lines to supply chains and financial markets - enabling organisations to stress-test scenarios, optimise processes, and de-risk decisions before committing to real-world action.",
+                "source": "Cosmos 1.0",
+                "implications": "Agent-based consumer behaviour simulations model how portfolio changes (new launches, brand repositioning, price changes) will affect category share before launch.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. Unilever operates eight digital twins across four continents, using simulation for scenario planning across quality, sustainability, and portfolio parameters. [https://consumergoods.com/operational-investments-5-cpgs-predicting-future-digital-twins]\n2. AB InBev adopted Anaplan for connected scenario planning across finance, supply chain, sales, and marketing, reducing scenario iteration from weeks to hours. [https://www.anaplan.com/customers/abinbev/]\n3. Nestle uses a demand and production planning simulation tool (Pyplan) to optimise portfolio hierarchy across segments, brands, SKUs, factories, and production lines. [https://pyplan.com/blog/nestle-demand-planning-and-production-optimization/]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Customer",
+        "productFamilies": [
+          {
+            "name": "Contract & Order management",
+            "description": "Manage contracts from vendors, partners, and customers from order acquisition to contract management.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-based order exception management automatically identifies anomalous orders (over/under vs. forecast, duplicate entries) and routes them for human review, reducing fulfilment errors.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard has the potential to do it given similar algorithms used in KDPs.\n\nOther benchmarks:\nUnilever has revolutionized its procurement by deploying AI-driven Contract Lifecycle Management (CLM) tools across 70+ countries. These tools use Natural Language Processing (NLP) to automatically draft contracts and monitor for value leakage. [https://www.hbs.edu/faculty/Pages/item.aspx?num=68461]\nNestlé uses an AI assistant named Oro (powered by the platform Tomorro) to manage the entire lifecycle of its vendor agreements. The system extracts key data and makes negotiation recommendations based on internal legal policies. [https://autoscheduler.ai/wp-content/uploads/2025/03/AutoScheduler-PG-Case-Study.pdf]"
+              },
+              {
+                "name": "Smart Contract",
+                "description": "Smart Contracts are computer programmes that automatically execute a transaction in the blockchain when certain terms and conditions are met. They can help authenticate the parties and the documentation of a transaction. Tech Opportunity Score: 8/10. (BNP l'atelier Tech Radar – Access / Infrastructure)",
+                "source": "BNP l'atelier",
+                "implications": "Self-executing smart contracts automate distributor agreement terms, trigger rebates when sales thresholds are met, and reduce contract administration across PR's global distributor network.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. BlockBar's Ethereum-based smart contracts verify authenticity and trace every transaction for partner spirits brands including Diageo, Bacardi, and LVMH Moet Hennessy. [https://technode.global/2022/12/07/this-startup-allows-you-to-trade-own-gift-luxury-wines-nfts-which-comes-with-actual-physical-bottles/]\n2. Diageo backed a blockchain track-and-trace system using smart tamper-proof labels that log each supply chain transaction as a smart contract event. [https://techobserver.in/2022/06/06/diageo-backs-blockchain-tech-to-track-down-pilferage-of-liquor-and-counterfeits/]"
+              }
+            ]
+          },
+          {
+            "name": "Customer & Channel strategy",
+            "description": "Define the plan to sell to customers: trends analysis, wholesaler insights, portfolio sales strategy.",
+            "technologies": [
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "AI-driven consumer trend detection can identify emerging spirits categories (e.g., low-alcohol, premiumisation, cocktail culture) up to 18 months before they appear in scan data.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Diageo's AI Foresight System analyses 160 million social conversations to detect consumer trends and inform channel strategy. [https://consumergoods.com/diageo-creates-cross-industry-ai-enabled-think-party-pin-down-consumer-trends]\n2. Diageo uses AI-powered consultancy Codec AI to decode real consumer behaviour and identify culturally distinct brand opportunities by channel. [https://www.marketingweek.com/diageo-ai-real-customers/]\n3. Heineken uses AI platform Stravito with GenAI to query 8,000+ files of consumer and channel insight data through conversational natural-language questions. [https://consumergoods.com/heineken-elevates-knowledge-insights-management-generative-ai]"
+              },
+              {
+                "name": "Big data",
+                "description": "Big data refers to extremely large, fast-moving, and varied datasets - generated by transactions, sensors, social media, and digital interactions - that require specialised infrastructure to process and analyse at scale. Organisations that harness big data gain competitive advantages in demand forecasting, customer personalisation, and operational performance management.",
+                "source": "Cosmos 1.0",
+                "implications": "Big data aggregation of distributor sell-out, Nielsen/Circana point-of-sale, and consumer sentiment data allows the strategy team to monitor portfolio performance across hundreds of markets in near real time.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered market sizing and opportunity mapping tools identify under-penetrated channels and geographies before competitors, informing PR's route-to-market prioritisation.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Integrated Customer Management",
+            "description": "Manage customer relationships and enable customers to process their own transactions.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered CRM tools segment distributors by value, predict churn risk, and recommend personalised engagement actions, enabling the group to protect its most critical commercial relationships.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "N/A"
+              },
+              {
+                "name": "AI Avatar",
+                "description": "Avatars are graphical representations of a user or object in a virtual environment. AI Avatars use machine learning to create autonomous, adaptive representations that can act as virtual assistants or brand ambassadors. Tech Opportunity Score: 9/10. (BNP l'atelier Tech Radar – Access / Software)",
+                "source": "BNP l'atelier",
+                "implications": "AI Avatars act as always-on virtual key account managers for smaller distributors, handling routine enquiries, order status updates, and promotional communications without human intervention.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Perfect store",
+            "description": "Deliver interactive experiences directly to consumers within physical stores.",
+            "technologies": [
+              {
+                "name": "Augmented reality",
+                "description": "Augmented Reality (AR) overlays digital information - images, annotations, step-by-step instructions - onto the user's live view of the physical world via a smartphone or smart glasses. AR is applied in field service, manufacturing training, consumer marketing, and retail to deliver contextual guidance and immersive product experiences.",
+                "source": "Cosmos 1.0",
+                "implications": "AR planogram tools allow category managers to design and simulate the optimal shelf layout in any retailer's fixture dimensions before physical execution, reducing costly resets.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Trax launched the first AR in-store execution solution for retail, used by Heineken and AB InBev to guide field reps to capture complete shelf images and fix planogram gaps. [https://traxretail.com/news/trax-launches-new-augmented-reality-store-execution-solution-first-kind-retail-industry/]\n2. Trax's AR Shelf Capture Assistant overlays visual guides on shelf images in real time to flag missed areas and ensure complete planogram compliance for CPG brands. [https://www.traxretail.com/technology/augmented-reality/]\n3. InContext Solutions uses AR to superimpose ideal digital product placements onto the physical store environment, enabling planogram compliance checking for CPG firms. [https://incontextsolutions.com/blog/planogram-compliance-augmented-reality/]"
+              },
+              {
+                "name": "Computer vision",
+                "description": "Computer vision enables machines to interpret and analyse visual information from images and video - detecting objects, reading labels, identifying defects, and recognising faces. It powers quality control on production lines, automated retail checkout, visual search applications, and a wide range of safety and surveillance systems.",
+                "source": "Cosmos 1.0",
+                "implications": "Computer vision analyses in-store imagery to score planogram compliance, pricing accuracy, and display quality across every visited outlet, delivering perfect store KPIs without manual audit.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Diageo's EDGE programme uses Trax computer vision to convert shelf photos to instant insights on out-of-stocks, facings, and price - outlets grew volume 3x faster than non-participants. [https://traxretail.com/blog/4-tips-modernize-retail-execution-lessons-diageo/]\n2. PepsiCo built a mobile-first computer vision shelf intelligence system with Grid Dynamics that identifies SKUs, compares to planograms, and prompts real-time corrective action. [https://www.griddynamics.com/blog/pepsico-shelf-intelligence]\n3. AB InBev trialled Pensa Systems' drone-based computer vision in a Canadian store, collecting hourly out-of-stock and share-of-shelf data at 98% accuracy. [https://www.beveragedaily.com/Article/2019/01/14/AB-InBev-trials-drones-advanced-computer-vision-and-AI-in-retail/]"
+              },
+              {
+                "name": "Haptics",
+                "description": "Haptic feedback is the synthetic reproduction of the sense of touch. It is expected to be widely adopted in virtual/immersive environments, enabling users to feel textures, temperature and resistance digitally. Tech Opportunity Score: 10/10. (BNP l'atelier Tech Radar – Access / Hardware)",
+                "source": "BNP l'atelier",
+                "implications": "Haptic feedback integrated into immersive retail experiences (e.g., whisky tasting experiences) allows consumers to physically feel bottle weight, texture, and pack quality in a digital environment – a premium brand-building tool.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Pilot",
+                "successfulCases": "Gucci, Louis Vuitton, Chanel, Burberry, and Bang & Olufsen lead with digital stores where you \"feel\" fabrics, leather finishes, or button clicks via vibrations on your phone/tablet. Gucci reports +25% online sales; Burberry uses it for trench coat fabrics to cut returns. Perfect for spirits too—imagine \"feeling\" premium bottle texture on D2C. [https://essfeed.com/how-luxury-brands-use-haptic-technology-to-simulate-fabric-touch-in-digital-stores/]"
+              }
+            ]
+          },
+          {
+            "name": "RGM",
+            "description": "Revenue growth management: planning, execution, and evaluation.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered pricing optimisation analyses price elasticity, competitive pricing, and consumer willingness to pay across every SKU/market combination, enabling dynamic revenue management at scale.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard has Rev'Up"
+              },
+              {
+                "name": "Recommender system",
+                "description": "Recommender systems use machine learning algorithms and behavioural data to surface the most relevant products, content, or actions for each individual user at any given moment. They are the engine behind personalisation in e-commerce, digital marketing, and content platforms, directly influencing conversion, engagement, and customer loyalty.",
+                "source": "Cosmos 1.0",
+                "implications": "Recommender-system logic applied to promotional mechanics identifies which trade investments deliver the highest incremental volume per euro spent, improving trade spend ROI.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Transform",
+                "successfulCases": "Pernod Ricard has Rev'Up"
+              },
+              {
+                "name": "Artificial Intelligence, including Generative AI",
+                "description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)",
+                "source": "Stanford, Cosmos 1.0",
+                "implications": "GenAI can generate thousands of pricing and promotional scenario variants and rank them by predicted profit impact, giving the RGM team an unprecedented decision-support capability.",
+                "horizon": "H2 – Mid-term (2029–2031)",
+                "stage": "Pilot",
+                "successfulCases": "1. AB InBev is integrating GenAI as a core priority within its Integrated Business Planning programme to generate and summarise complex pricing and planning scenarios for commercial teams. [https://o9solutions.com/articles/ab-inbevs-future-ready-recipe-for-digital-transformation-story/]\n2. Coca-Cola is scaling GenAI-powered end-to-end RGM systems including dynamic pricing and scenario generation for pack-price-channel optimisation. [https://consumergoods.com/coca-cola-beefs-pricing-promotion-intelligence-rgm-capabilities]"
+              }
+            ]
+          },
+          {
+            "name": "Sales execution",
+            "description": "Sales process from origination to completion: CRM and sales execution performance.",
+            "technologies": [
+              {
+                "name": "Augmented reality",
+                "description": "Augmented Reality (AR) overlays digital information - images, annotations, step-by-step instructions - onto the user's live view of the physical world via a smartphone or smart glasses. AR is applied in field service, manufacturing training, consumer marketing, and retail to deliver contextual guidance and immersive product experiences.",
+                "source": "Cosmos 1.0",
+                "implications": "AR-enabled sales tools allow reps to show buyers how a Pernod Ricard display would look in their specific outlet before any physical asset is installed, accelerating listing decisions.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Heineken and AB InBev use Trax's AR Shelf Capture Assistant, which overlays augmented reality guides onto the phone camera view for field reps conducting in-store execution audits. [https://traxretail.com/news/trax-launches-new-augmented-reality-store-execution-solution-first-kind-retail-industry/]\n2. Anheuser-Busch InBev used mobile AR to give field sales reps a competitive edge, enabling virtual overlay of product placement and promotional displays in retail environments. [https://www.marketingdive.com/ex/mobilemarketer/cms/news/software-technology/15702.html]"
+              },
+              {
+                "name": "Computer vision",
+                "description": "Computer vision enables machines to interpret and analyse visual information from images and video - detecting objects, reading labels, identifying defects, and recognising faces. It powers quality control on production lines, automated retail checkout, visual search applications, and a wide range of safety and surveillance systems.",
+                "source": "Cosmos 1.0",
+                "implications": "Computer vision on in-store photographs automatically audits shelf compliance (share of shelf, pricing compliance, POS material placement) at scale across thousands of outlets.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. Diageo uses Trax computer vision in its EDGE programme so field reps snap shelf photos and receive corrective action scorecards within 24 hours. [https://traxretail.com/news/edge-data-analytics-accelerating-sales-outlets-united-states/]\n2. PepsiCo's mobile CV system powered by Grid Dynamics lets merchandisers audit shelves in seconds, comparing live images to planograms and prompting in-store fixes in real time. [https://www.griddynamics.com/blog/pepsico-shelf-intelligence]\n3. AB InBev trialled autonomous drone-based CV by Pensa Systems for hourly shelf scanning in retail, capturing out-of-stocks and planogram compliance data without manual effort. [https://www.beveragedaily.com/Article/2019/01/14/AB-InBev-trials-drones-advanced-computer-vision-and-AI-in-retail/]"
+              },
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML-powered next-best-action tools guide sales representatives on which accounts to visit, which SKUs to pitch, and at what price point – proven to increase revenue per call by 15–25% in FMCG contexts.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Tranform",
+                "successfulCases": "Pernod Ricard has D-Star.\n\nOther benchmarks:\nHeineken's AIDDA ML platform helps sales reps plan routes and select customer touchpoints, cutting travel time by 30% and boosting volume by 3% in Mexico. [https://www.theheinekencompany.com/newsroom/brewing-with-ai/]\nAB InBev uses ML to auto-generate 75% of customer orders and optimise supply order planning, reducing planning run times by 60%. [https://consumergoods.com/ab-inbev-helps-drive-marketing-optimization-ml-powered-bees]\nCoca-Cola uses AI to analyse traffic patterns and delivery schedules for route optimisation, with trucks receiving mid-route adjustments based on real-time data. [https://www.cleverence.com/articles/business-blogs/how-pepsico-and-coca-cola-optimize-wholesale-distribution-with-ai-powered-logistics/]"
+              },
+              {
+                "name": "Robotics and Autonomous Systems",
+                "description": "An integrative field drawing on advances in AI, sensors, actuators, and mechanical engineering. Physical robots increasingly work alongside humans in manufacturing, logistics, agriculture, and services. (Stanford Emerging Technology Review 2025)",
+                "source": "Stanford",
+                "implications": "Autonomous delivery robots and drones will transform last-mile logistics in urban on-trade environments – particularly relevant for premium spirits delivery to high-end hospitality accounts.",
+                "horizon": "H3 – Long-term (2032 and beyond)",
+                "stage": "Seed",
+                "successfulCases": "N/A"
+              }
+            ]
+          },
+          {
+            "name": "Sales team excellence",
+            "description": "Ensure performance of the sales team: best practices and sales rep incentive management.",
+            "technologies": [
+              {
+                "name": "Machine learning",
+                "description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.",
+                "source": "Cosmos 1.0",
+                "implications": "ML dashboards benchmark individual sales rep performance against peers and identify skill gaps requiring coaching intervention, enabling targeted rather than one-size-fits-all capability development.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Tranform",
+                "successfulCases": "Pernod Ricard has D-Star.\n\nOther benchmarks:\nHeineken's AIDDA AI transforms sales reps from order-takers to business advisors by generating data-driven next-best-action recommendations, deployed to 3,700+ reps across seven markets. [https://www.chiefaiofficer.com/post/heineken-ai-sales-strategy-490000-customer-engagements-aidda]\nAB InBev's ML-powered BEES platform supports sales rep performance by automating personalised proposals, measuring engagement, and tracking outcomes across 100 million customer records. [https://consumergoods.com/ab-inbev-helps-drive-marketing-optimization-ml-powered-bees]"
+              },
+              {
+                "name": "Virtual reality",
+                "description": "Virtual Reality (VR) immerses users in fully computer-generated, three-dimensional environments experienced through a headset. Beyond entertainment, VR is increasingly adopted for immersive workforce training, virtual brand experiences, and complex simulation scenarios that would be costly or risky to conduct in the real world.",
+                "source": "Cosmos 1.0",
+                "implications": "VR sales simulations allow reps to practise difficult customer negotiations, objection handling, and premium brand storytelling in a safe, repeatable environment before doing it live.",
+                "horizon": "H1 – Near-term (2026–2028)",
+                "stage": "Pilot",
+                "successfulCases": "1. L'Oreal launched VR Matrix Academy, training millions of hairstylists globally in new styling techniques via room-scale volumetric VR instead of costly in-person sessions. [https://www.fastcompany.com/3065245/loreal-is-using-virtual-reality-to-expand-the-matrix-ac]\n2. Diageo Bar Academy partnered with Threedium to create a Virtual Bar experience for bar industry professionals, enabling immersive trade skills training via VR. [https://www.diageo.com/en/news-and-media/press-releases/2022/diageo-bar-academy-launches-unique-virtual-bar-experience-for-the-bar-industry-1]\n3. Diageo's digital lab explores how VR and AI can shape social and sales experiences, with VR routinely used to research and train teams on in-store consumer experiences. [https://www.beveragedaily.com/Article/2023/10/10/From-AI-to-VR-Diageo-launches-lab-to-develop-digital-concepts/]"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

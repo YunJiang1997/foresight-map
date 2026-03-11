@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Pernod Ricard &middot; Corporate Domain &mdash; Zones of Opportunity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f5f6fa; --surface:#fff; --border:#e4e8f0;
+      --t1:#1e293b; --t2:#475569; --t3:#94a3b8;
+      --accent:#3b82f6;
+      --seed:#6366f1;  --seed-l:#eef2ff;  --seed-b:#c7d2fe;
+      --pilot:#0ea5e9; --pilot-l:#f0f9ff; --pilot-b:#bae6fd;
+      --tx:#10b981;    --tx-l:#ecfdf5;    --tx-b:#a7f3d0;
+    }
+    body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--t1);font-size:14px;line-height:1.65}
+
+    /* HEADER */
+    .header{background:var(--surface);border-bottom:1px solid var(--border);padding:36px 64px 30px}
+    .header-eyebrow{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--t3);margin-bottom:10px}
+    .header h1{font-family:"Space Grotesk",sans-serif;font-size:26px;font-weight:700;line-height:1.2;margin-bottom:10px}
+    .header p{font-size:13.5px;color:var(--t2);max-width:700px}
+    .pills{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+    .pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;
+           padding:4px 12px;border-radius:20px;border:1px solid var(--border);color:var(--t2);background:var(--bg)}
+    .pd{width:7px;height:7px;border-radius:50%}
+
+    /* LEGEND */
+    .legend{background:var(--surface);border-bottom:1px solid var(--border);
+             padding:12px 64px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+    .leg-lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t3)}
+    .sb{display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:3px 10px;border-radius:4px}
+    .sb.seed     {background:var(--seed-l);color:var(--seed)}
+    .sb.pilot    {background:var(--pilot-l);color:var(--pilot)}
+    .sb.transform{background:var(--tx-l);color:var(--tx)}
+    .leg-hint{font-size:12px;color:var(--t3);margin-left:8px}
+
+    /* MAIN */
+    .main{max-width:1220px;margin:0 auto;padding:48px 32px 80px}
+
+    /* GRID */
+    .zones-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+    @media(max-width:1100px){.zones-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:680px){.zones-grid{grid-template-columns:1fr}}
+
+    /* ZONE CARD */
+    .zone-card{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:14px;overflow:hidden;display:flex;flex-direction:column;
+      transition:box-shadow .2s;
+    }
+    .zone-card:hover{box-shadow:0 6px 28px rgba(0,0,0,.08)}
+
+    .zone-card-top{padding:20px 20px 14px;border-bottom:1px solid var(--border)}
+    .zone-cluster-label{
+      display:inline-block;
+      font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+      padding:3px 9px;border-radius:4px;border:1px solid;
+      margin-bottom:10px;
+    }
+    .zone-title{
+      font-family:"Space Grotesk",sans-serif;
+      font-size:14.5px;font-weight:700;color:var(--t1);line-height:1.35;margin-bottom:10px;
+    }
+    .fn-chips{display:flex;flex-wrap:wrap;gap:5px}
+    .fn-chip{font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:4px}
+
+    /* USE CASE */
+    .zone-usecase{
+      padding:13px 20px 12px;background:var(--bg);border-bottom:1px solid var(--border);
+      flex:1;
+    }
+    .usecase-label{
+      font-size:10px;font-weight:700;letter-spacing:.09em;
+      text-transform:uppercase;color:var(--accent);margin-bottom:6px;
+    }
+    .usecase-text{font-size:12.5px;color:var(--t2);line-height:1.6}
+
+    /* TAGS */
+    .zone-tags{padding:13px 20px 17px}
+    .tags-label{
+      font-size:10px;font-weight:700;letter-spacing:.09em;
+      text-transform:uppercase;color:var(--t3);margin-bottom:9px;
+    }
+    .tags-wrap{display:flex;flex-wrap:wrap;gap:6px}
+    .tech-tag{
+      display:inline-block;font-size:11px;font-weight:600;
+      padding:4px 11px;border-radius:6px;cursor:pointer;
+      border:1.5px solid transparent;transition:all .15s;user-select:none;
+    }
+    .tech-tag.seed     {background:var(--seed-l);color:var(--seed);border-color:var(--seed-b)}
+    .tech-tag.pilot    {background:var(--pilot-l);color:var(--pilot);border-color:var(--pilot-b)}
+    .tech-tag.transform{background:var(--tx-l);color:var(--tx);border-color:var(--tx-b)}
+    .tech-tag:hover{filter:brightness(.91);transform:translateY(-1px);box-shadow:0 2px 8px rgba(0,0,0,.1)}
+    .tech-tag.active{filter:brightness(.84);transform:none;box-shadow:none}
+
+    /* POPUP */
+    .popup-overlay{
+      position:fixed;inset:0;background:rgba(15,23,42,.18);z-index:90;
+      opacity:0;pointer-events:none;transition:opacity .2s;
+    }
+    .popup-overlay.visible{opacity:1;pointer-events:auto}
+    .popup-panel{
+      position:fixed;top:0;right:0;width:440px;height:100vh;
+      background:var(--surface);border-left:1px solid var(--border);
+      box-shadow:-8px 0 40px rgba(0,0,0,.1);
+      z-index:100;display:flex;flex-direction:column;
+      transform:translateX(100%);
+      transition:transform .24s cubic-bezier(.4,0,.2,1);
+    }
+    .popup-panel.visible{transform:translateX(0)}
+    .popup-topbar{
+      padding:18px 20px 15px;border-bottom:1px solid var(--border);
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+      flex-shrink:0;
+    }
+    .popup-tech-name{
+      font-family:"Space Grotesk",sans-serif;
+      font-size:15px;font-weight:700;color:var(--t1);line-height:1.3;
+    }
+    .popup-close{
+      width:30px;height:30px;border-radius:8px;
+      border:1px solid var(--border);background:var(--bg);
+      display:flex;align-items:center;justify-content:center;
+      cursor:pointer;color:var(--t3);font-size:15px;flex-shrink:0;
+      transition:background .15s;
+    }
+    .popup-close:hover{background:#f1f5f9;color:var(--t1)}
+    .popup-body{overflow-y:auto;flex:1;padding:20px}
+    .p-sec{margin-bottom:20px}
+    .p-sec:last-child{margin-bottom:0}
+    .p-sec-lbl{
+      font-size:10px;font-weight:700;letter-spacing:.1em;
+      text-transform:uppercase;color:var(--t3);margin-bottom:7px;
+    }
+    .p-sec-txt{font-size:13px;color:var(--t2);line-height:1.6}
+    .p-sec-txt a{color:var(--accent);text-decoration:none}
+    .p-sec-txt a:hover{text-decoration:underline}
+    .case-item{
+      padding:9px 12px;border-radius:8px;
+      background:var(--bg);border:1px solid var(--border);
+      margin-bottom:7px;font-size:12.5px;color:var(--t2);line-height:1.55;
+    }
+    .case-item:last-child{margin-bottom:0}
+
+    /* SUMMARY */
+    .summary{
+      background:var(--surface);border:1px solid var(--border);
+      border-radius:14px;overflow:hidden;margin-top:56px;
+    }
+    .summary h2{
+      font-family:"Space Grotesk",sans-serif;font-size:15px;font-weight:700;
+      padding:20px 24px 16px;border-bottom:1px solid var(--border);
+    }
+    table{width:100%;border-collapse:collapse;font-size:12.5px}
+    th{
+      background:var(--bg);text-align:left;padding:9px 16px;
+      font-size:10.5px;font-weight:700;letter-spacing:.06em;
+      text-transform:uppercase;color:var(--t3);
+      border-bottom:1px solid var(--border);
+    }
+    td{padding:11px 16px;border-bottom:1px solid var(--border);vertical-align:top}
+    tr:last-child td{border-bottom:none}
+    tr:hover td{background:#fafbfc}
+
+    .footer{
+      margin-top:44px;text-align:center;
+      font-size:11.5px;color:var(--t3);padding-bottom:32px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-eyebrow">Pernod Ricard &middot; Technology Foresight 2025 &middot; Corporate Domain</div>
+  <h1>Zones of Opportunity &mdash; Corporate Domain</h1>
+  <p>6 consolidated, capability-oriented zones of opportunity — mapping 33 emerging technologies
+     to PR&rsquo;s strategic priorities across Finance, HR, Legal and Corporate Strategy.</p>
+  <div class="pills">
+    <span class="pill"><span class="pd" style="background:#2563eb"></span>Data, Reporting &amp; Analytics</span>
+    <span class="pill"><span class="pd" style="background:#0d9488"></span>Process &amp; Workflow Automation</span>
+    <span class="pill"><span class="pd" style="background:#d97706"></span>Document &amp; Text Intelligence</span>
+    <span class="pill"><span class="pd" style="background:#dc2626"></span>Governance, Risk &amp; Compliance</span>
+    <span class="pill"><span class="pd" style="background:#7c3aed"></span>Planning, Budgeting &amp; Forecasting</span>
+    <span class="pill"><span class="pd" style="background:#ea580c"></span>Learning &amp; Employee Experience</span>
+  </div>
+</div>
+
+<div class="legend">
+  <span class="leg-lbl">Technology stage:</span>
+  <span class="sb seed">Seed &mdash; weak signals / research</span>
+  <span class="sb pilot">Pilot &mdash; emerging in benchmark peers</span>
+  <span class="sb transform">Transform &mdash; maturing, PR may have tested</span>
+  <span class="leg-hint">&larr; click any tag to explore</span>
+</div>
+
+<div class="main">
+  <div class="zones-grid">
+      <div class="zone-card" id="zone-Z1">
+        <div class="zone-card-top" style="border-left:4px solid #2563eb">
+          <div class="zone-cluster-label" style="color:#2563eb;background:#eff6ff;border-color:#bfdbfe">Data, Reporting & Analytics</div>
+          <div class="zone-title">From Data Assembly to Always-On Business Intelligence</div>
+          <div class="fn-chips"><span class="fn-chip" style="background:#ecfdf5;color:#065f46">Finance</span><span class="fn-chip" style="background:#f5f3ff;color:#5b21b6">HR</span><span class="fn-chip" style="background:#eff6ff;color:#1e40af">Corporate Strategy</span></div>
+        </div>
+        <div class="zone-usecase">
+          <div class="usecase-label">Provisional Use Case</div>
+          <div class="usecase-text">Polaris (40+ ERPs), Workday People Analytics, and Kyriba create rich data assets that today feed largely manual reporting cycles. Layering AI/ML turns these into always-on intelligence: GenAI drafts board-ready group reporting narratives in minutes; ML detects anomalies across consolidated multi-entity data; People Analytics predicts attrition and surfaces pay equity gaps across 80+ nationalities; and corporate intelligence platforms synthesise competitor signals from patents, media, and startup databases in real time.</div>
+        </div>
+        <div class="zone-tags">
+          <div class="tags-label">Technologies — click to explore</div>
+          <div class="tags-wrap"><span class="tech-tag pilot" data-tid="0" onclick="openPopup(0)">AI / GenAI — Group Reporting</span>
+          <span class="tech-tag pilot" data-tid="1" onclick="openPopup(1)">Machine Learning — Consolidation</span>
+          <span class="tech-tag transform" data-tid="2" onclick="openPopup(2)">Big Data & People Analytics</span>
+          <span class="tech-tag pilot" data-tid="3" onclick="openPopup(3)">Machine Learning — Talent & Attrition</span>
+          <span class="tech-tag pilot" data-tid="4" onclick="openPopup(4)">AI / GenAI — Media & Sentiment</span>
+          <span class="tech-tag pilot" data-tid="5" onclick="openPopup(5)">Machine Learning — Market Intelligence</span>
+          <span class="tech-tag pilot" data-tid="6" onclick="openPopup(6)">Machine Learning — Production Analytics</span></div>
+        </div>
+      </div>
+
+      <div class="zone-card" id="zone-Z2">
+        <div class="zone-card-top" style="border-left:4px solid #0d9488">
+          <div class="zone-cluster-label" style="color:#0d9488;background:#f0fdf9;border-color:#99f6e4">Process & Workflow Automation</div>
+          <div class="zone-title">Eliminating Manual Handoffs Across Shared Services</div>
+          <div class="fn-chips"><span class="fn-chip" style="background:#ecfdf5;color:#065f46">Finance</span><span class="fn-chip" style="background:#f5f3ff;color:#5b21b6">HR</span><span class="fn-chip" style="background:#fffbeb;color:#92400e">Legal</span></div>
+        </div>
+        <div class="zone-usecase">
+          <div class="usecase-label">Provisional Use Case</div>
+          <div class="usecase-text">Finance (AP/AR processing, bank statement downloads, reconciliation steps), HR (interview scheduling, onboarding sequences, payroll self-service), and Legal (contract routing, matter assignment) all face the same problem: high-volume, rule-based handoffs consuming professional time. RPA executes the steps; FinTech platforms automate the transactions; AI orchestrates the exception flows. Process mining (Celonis, flagged as the #1 LEAP bottleneck) identifies exactly where each workflow deviates from the global standard.</div>
+        </div>
+        <div class="zone-tags">
+          <div class="tags-label">Technologies — click to explore</div>
+          <div class="tags-wrap"><span class="tech-tag transform" data-tid="7" onclick="openPopup(7)">Robotic Process Automation</span>
+          <span class="tech-tag transform" data-tid="8" onclick="openPopup(8)">Financial Technology</span>
+          <span class="tech-tag pilot" data-tid="9" onclick="openPopup(9)">Smart Contract</span>
+          <span class="tech-tag pilot" data-tid="10" onclick="openPopup(10)">AI / GenAI — HR Workflow</span>
+          <span class="tech-tag pilot" data-tid="11" onclick="openPopup(11)">Machine Learning — Process Mining</span></div>
+        </div>
+      </div>
+
+      <div class="zone-card" id="zone-Z3">
+        <div class="zone-card-top" style="border-left:4px solid #d97706">
+          <div class="zone-cluster-label" style="color:#d97706;background:#fffbeb;border-color:#fde68a">Document & Text Intelligence</div>
+          <div class="zone-title">Extracting Value from Unstructured Text Across the Business</div>
+          <div class="fn-chips"><span class="fn-chip" style="background:#ecfdf5;color:#065f46">Finance</span><span class="fn-chip" style="background:#fffbeb;color:#92400e">Legal</span><span class="fn-chip" style="background:#f5f3ff;color:#5b21b6">HR</span></div>
+        </div>
+        <div class="zone-usecase">
+          <div class="usecase-label">Provisional Use Case</div>
+          <div class="usecase-text">Invoice documents across 40+ heterogeneous ERPs, contracts in the Global Contracting Platform, regulatory publications across 70+ markets, and internal communications in 30+ languages all share the same bottleneck: reading, classifying, and drafting text at scale is time-consuming and error-prone. GenAI and NLP models extract structured data from invoices for government portal submissions, pre-populate contracts from clause libraries, screen regulatory databases for relevant changes, and localise internal communications instantly.</div>
+        </div>
+        <div class="zone-tags">
+          <div class="tags-label">Technologies — click to explore</div>
+          <div class="tags-wrap"><span class="tech-tag pilot" data-tid="12" onclick="openPopup(12)">AI / GenAI — Invoice Extraction</span>
+          <span class="tech-tag transform" data-tid="13" onclick="openPopup(13)">Machine Learning — Document Processing</span>
+          <span class="tech-tag pilot" data-tid="14" onclick="openPopup(14)">Legal Technology — Contract Intelligence</span>
+          <span class="tech-tag pilot" data-tid="15" onclick="openPopup(15)">Machine Learning — Regulatory Screening</span>
+          <span class="tech-tag pilot" data-tid="16" onclick="openPopup(16)">AI / GenAI — Internal Communications</span></div>
+        </div>
+      </div>
+
+      <div class="zone-card" id="zone-Z4">
+        <div class="zone-card-top" style="border-left:4px solid #dc2626">
+          <div class="zone-cluster-label" style="color:#dc2626;background:#fff1f2;border-color:#fecdd3">Governance, Risk & Compliance</div>
+          <div class="zone-title">Shifting from Periodic Sampling to Continuous Assurance</div>
+          <div class="fn-chips"><span class="fn-chip" style="background:#fffbeb;color:#92400e">Legal</span><span class="fn-chip" style="background:#ecfdf5;color:#065f46">Finance</span></div>
+        </div>
+        <div class="zone-usecase">
+          <div class="usecase-label">Provisional Use Case</div>
+          <div class="usecase-text">Internal audit currently samples; regulations change faster than manual monitoring can track; the EU AI Act now mandates logging every AI-assisted decision. A Continuous Assurance platform closes all three gaps: ML covers 100% of transactions rather than a sample, flagging control weaknesses and fraud patterns in real time; blockchain creates tamper-proof audit trails across affiliates; LegalTech governance tooling produces the EU AI Act traceability log as a structured asset rather than a compliance burden. Post-quantum cryptography protects sensitive legal communications long-term.</div>
+        </div>
+        <div class="zone-tags">
+          <div class="tags-label">Technologies — click to explore</div>
+          <div class="tags-wrap"><span class="tech-tag pilot" data-tid="17" onclick="openPopup(17)">AI / GenAI — Continuous Audit</span>
+          <span class="tech-tag pilot" data-tid="18" onclick="openPopup(18)">Machine Learning — Transaction Monitoring</span>
+          <span class="tech-tag pilot" data-tid="19" onclick="openPopup(19)">Blockchain — Audit Trail</span>
+          <span class="tech-tag pilot" data-tid="20" onclick="openPopup(20)">Legal Technology — AI Act Compliance</span>
+          <span class="tech-tag seed" data-tid="21" onclick="openPopup(21)">Cryptography</span>
+          <span class="tech-tag seed" data-tid="22" onclick="openPopup(22)">Quantum Computing — Pattern Detection</span></div>
+        </div>
+      </div>
+
+      <div class="zone-card" id="zone-Z5">
+        <div class="zone-card-top" style="border-left:4px solid #7c3aed">
+          <div class="zone-cluster-label" style="color:#7c3aed;background:#f5f3ff;border-color:#ddd6fe">Planning, Budgeting & Forecasting</div>
+          <div class="zone-title">From Static Annual Plans to Dynamic Forward-Looking Intelligence</div>
+          <div class="fn-chips"><span class="fn-chip" style="background:#ecfdf5;color:#065f46">Finance</span><span class="fn-chip" style="background:#f5f3ff;color:#5b21b6">HR</span><span class="fn-chip" style="background:#eff6ff;color:#1e40af">Corporate Strategy</span></div>
+        </div>
+        <div class="zone-usecase">
+          <div class="usecase-label">Provisional Use Case</div>
+          <div class="usecase-text">Treasury cash forecasting, workforce headcount planning, and strategic portfolio scenario planning are three distinct exercises today — each periodic, each largely manual. The shift is to a single continuous planning posture: ML generates rolling 13-week cash forecasts from Kyriba data; AI workforce platforms produce dynamic 12-18 month demand forecasts tied to business projections; simulation models stress-test strategic portfolio scenarios — tariff shocks, M&A impacts, category shifts — before capital is committed. Digital twins enable cost-of-production simulations at site level before process changes are approved.</div>
+        </div>
+        <div class="zone-tags">
+          <div class="tags-label">Technologies — click to explore</div>
+          <div class="tags-wrap"><span class="tech-tag transform" data-tid="23" onclick="openPopup(23)">Financial Technology — Cash Forecasting</span>
+          <span class="tech-tag pilot" data-tid="24" onclick="openPopup(24)">Machine Learning — Cash Flow</span>
+          <span class="tech-tag pilot" data-tid="25" onclick="openPopup(25)">AI / GenAI — Workforce Planning</span>
+          <span class="tech-tag pilot" data-tid="26" onclick="openPopup(26)">Simulation — Workforce Scenarios</span>
+          <span class="tech-tag pilot" data-tid="27" onclick="openPopup(27)">Simulation — Strategic Scenarios</span>
+          <span class="tech-tag pilot" data-tid="28" onclick="openPopup(28)">Digital Twin — Production Cost</span>
+          <span class="tech-tag seed" data-tid="29" onclick="openPopup(29)">Quantum Computing — FX Optimisation</span></div>
+        </div>
+      </div>
+
+      <div class="zone-card" id="zone-Z6">
+        <div class="zone-card-top" style="border-left:4px solid #ea580c">
+          <div class="zone-cluster-label" style="color:#ea580c;background:#fff7ed;border-color:#fed7aa">Learning & Employee Experience</div>
+          <div class="zone-title">Immersive, Personalised Learning at Global Scale</div>
+          <div class="fn-chips"><span class="fn-chip" style="background:#f5f3ff;color:#5b21b6">HR</span></div>
+        </div>
+        <div class="zone-usecase">
+          <div class="usecase-label">Provisional Use Case</div>
+          <div class="usecase-text">19,000 employees across 70+ countries need consistent brand immersion, safety training, and skills development — but in-person sessions are costly and geographically constrained. VR/XR on the Horizon platform delivers safety training with 75%+ information recall (vs. classroom), brand storytelling for new joiners, and remote expert guidance collapsing geography as a barrier. AI personalises learning paths by role and career aspiration and localises content instantly into all required languages. PR India's VR onboarding is already live across 14 locations — a deployable template.</div>
+        </div>
+        <div class="zone-tags">
+          <div class="tags-label">Technologies — click to explore</div>
+          <div class="tags-wrap"><span class="tech-tag pilot" data-tid="30" onclick="openPopup(30)">Virtual Reality (VR)</span>
+          <span class="tech-tag pilot" data-tid="31" onclick="openPopup(31)">Extended Reality (XR)</span>
+          <span class="tech-tag pilot" data-tid="32" onclick="openPopup(32)">AI / GenAI — Personalised Learning</span></div>
+        </div>
+      </div>
+  </div>
+
+  <div class="summary">
+    <h2>Summary &mdash; 6 Zones of Opportunity</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Zone</th><th>Cluster</th><th>Business Orientation</th>
+          <th>Functions</th><th>Key Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:#2563eb">Z1</strong></td>
+          <td><span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#eff6ff;color:#2563eb">Data, Reporting & Analytics</span></td>
+          <td>From Data Assembly to Always-On Business Intelligence</td>
+          <td style="font-size:11.5px;color:#64748b">Finance &middot; HR &middot; Corporate Strategy</td>
+          <td style="font-size:11.5px;color:#64748b">AI/GenAI &middot; ML &middot; Big Data</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#0d9488">Z2</strong></td>
+          <td><span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#f0fdf9;color:#0d9488">Process & Workflow Automation</span></td>
+          <td>Eliminating Manual Handoffs Across Shared Services</td>
+          <td style="font-size:11.5px;color:#64748b">Finance &middot; HR &middot; Legal</td>
+          <td style="font-size:11.5px;color:#64748b">RPA &middot; FinTech &middot; Smart Contract &middot; AI/GenAI &middot; ML</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#d97706">Z3</strong></td>
+          <td><span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#fffbeb;color:#d97706">Document & Text Intelligence</span></td>
+          <td>Extracting Value from Unstructured Text Across the Business</td>
+          <td style="font-size:11.5px;color:#64748b">Finance &middot; Legal &middot; HR</td>
+          <td style="font-size:11.5px;color:#64748b">AI/GenAI &middot; ML &middot; LegalTech</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#dc2626">Z4</strong></td>
+          <td><span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#fff1f2;color:#dc2626">Governance, Risk & Compliance</span></td>
+          <td>Shifting from Periodic Sampling to Continuous Assurance</td>
+          <td style="font-size:11.5px;color:#64748b">Legal &middot; Finance</td>
+          <td style="font-size:11.5px;color:#64748b">AI/GenAI &middot; ML &middot; Blockchain &middot; LegalTech &middot; Cryptography &middot; Quantum</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#7c3aed">Z5</strong></td>
+          <td><span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#f5f3ff;color:#7c3aed">Planning, Budgeting & Forecasting</span></td>
+          <td>From Static Annual Plans to Dynamic Forward-Looking Intelligence</td>
+          <td style="font-size:11.5px;color:#64748b">Finance &middot; HR &middot; Corporate Strategy</td>
+          <td style="font-size:11.5px;color:#64748b">FinTech &middot; ML &middot; AI/GenAI &middot; Simulation &middot; Digital Twin &middot; Quantum</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#ea580c">Z6</strong></td>
+          <td><span style="font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#fff7ed;color:#ea580c">Learning & Employee Experience</span></td>
+          <td>Immersive, Personalised Learning at Global Scale</td>
+          <td style="font-size:11.5px;color:#64748b">HR</td>
+          <td style="font-size:11.5px;color:#64748b">VR &middot; XR &middot; AI/GenAI</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    Pernod Ricard &middot; Global Tech — Technology Innovation &middot; Corporate Domain Foresight &middot; March 2026<br/>
+    Based on PR Technology Foresight Mapping (Bold Horizons) + Corporate Capability Lead Interview Note
+  </div>
+</div>
+
+<div class="popup-overlay" id="popupOverlay" onclick="closePopup()"></div>
+<div class="popup-panel"   id="popupPanel">
+  <div class="popup-topbar">
+    <div>
+      <div class="popup-tech-name" id="popupName"></div>
+      <div style="margin-top:6px" id="popupStage"></div>
+    </div>
+    <div class="popup-close" onclick="closePopup()">&#x2715;</div>
+  </div>
+  <div class="popup-body" id="popupBody"></div>
+</div>
+
+<script>
+const TECH_DATA = [{"id": 0, "zone": "Z1", "label": "AI / GenAI — Group Reporting", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI is beginning to automate and augment FP&A workflows end-to-end, from data aggregation to narrative generation in management reports, materially reducing manual effort. GenAI can draft management commentary, variance analysis narratives, and board-ready reporting summaries, enabling finance teams to shift from data assembly to strategic analysis.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Heineken deployed 'Hoppy', a GenAI chatbot on SAP BTP, to help finance teams navigate internal standards and flag missing cost-centre data in purchase orders. [https://www.clubitc.eu/2025/06/04/sap-powers-heinekens-digital-transformation-ai-chatbot-hoppy-accelerates-data-access-and-operational-efficiency/]\n2. Heineken partnered with Anaplan to build global FP&A capabilities, enabling value-oriented management reporting and planning across 190 countries. [https://www.anaplan.com/connect/on-demand-sessions/how-heineken-approaches-financial-planning-and-analysis/]\n3. Nestle uses AI to automate data cleansing, report generation, and FP&A narrative, replacing manual forecasting with advanced statistical models. [https://aimagazine.com/news/frontier-firm-ai-how-nestle-uses-ai-to-drive-performance]", "scientific_support": ""}, {"id": 1, "zone": "Z1", "label": "Machine Learning — Consolidation", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML models automate multi-entity financial consolidation, detect anomalies in reported data, and compress the financial close cycle – a direct efficiency lever for Pernod Ricard's complex multi-affiliate structure.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Nestle built an Azure Data Lake with Deloitte, powering 400+ ML-driven operational and executive reports for 800+ finance and sales users. [https://www.deloitte.com/global/en/services/consulting/perspectives/nestle-case-study.html]\n2. AB InBev deployed the 'ABCredit' ML model to manage credit risk across its distributor and retail network, generating individualised creditworthiness assessments. [https://aiexpert.network/case-study-ab-inbev-integrates-ai-for-innovation-and-efficiency/]\n3. Coca-Cola HBC implemented ML demand-forecasting integrated with sales, weather, and promotions data, improving forecast accuracy by 30% and cutting inventory costs by 45M euros annually. [https://digitaldefynd.com/IQ/ways-coca-cola-uses-artificial-intelligence/]", "scientific_support": ""}, {"id": 2, "zone": "Z1", "label": "Big Data & People Analytics", "stage": "Transform", "tech_description": "Big data refers to extremely large, fast-moving, and varied datasets - generated by transactions, sensors, social media, and digital interactions - that require specialised infrastructure to process and analyse at scale. Organisations that harness big data gain competitive advantages in demand forecasting, customer personalisation, and operational performance management.", "implications": "Workforce analytics using big data allow benchmarking of talent composition and pay equity across PR's 80+ nationalities against external market benchmarks.", "maturity_pr": "1. PR deployed Workday People Analytics across 19,000 employees in 86 subsidiaries, enabling workforce benchmarking across 80+ nationalities for talent, performance and diversity reporting (2019). [https://www.businesswire.com/news/home/20190322005357/en/Pernod-Ricard-Accelerates-Its-HR-Transformation-with-the-Global-Rollout-of-Workday-Its-New-Digital-Solution]", "successful_cases": "", "scientific_support": ""}, {"id": 3, "zone": "Z1", "label": "Machine Learning — Talent & Attrition", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML-based performance analytics identify high-potential employees earlier and model flight risk, enabling proactive retention conversations in a group where talent is a key competitive differentiator.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Nestle's People Analytics team used logistic regression, supervised ML, clustering, and survival analysis to predict employee attrition and identify five key flight-risk drivers among UK employees. [https://www.myhrfuture.com/digital-hr-leaders-podcast/2019/7/22/nestles-people-analytics-journey]\n2. Unilever implemented predictive attrition modelling with ML, enabling proactive retention interventions for high-risk technical talent and reducing regrettable turnover in engineering roles by 25% over 18 months. [https://bernardmarr.com/the-amazing-ways-how-unilever-uses-artificial-intelligence-to-recruit-train-thousands-of-employees/]", "scientific_support": ""}, {"id": 4, "zone": "Z1", "label": "AI / GenAI — Media & Sentiment", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI media monitoring and sentiment analysis platforms track PR brand perception across 70+ markets in real time, enabling the Corporate Relations team to respond to emerging reputational issues before they escalate. GenAI assists in drafting stakeholder communications, position papers, and regulatory responses at scale and speed, freeing senior public affairs professionals for strategic relationship-building.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Unilever deployed AI across 26 data centres for social listening and media monitoring, decoding conversations in multiple languages at scale. [https://consumergoods.com/unilever-bolsters-social-listening-strategy-ai]\n2. Coca-Cola's Microsoft partnership includes testing Copilot for summarising communications and generating business content for 700,000 employees. [https://www.coca-colacompany.com/media-center/the-coca-cola-company-and-microsoft-announce-five-year-strategic-partnership-to-accelerate-cloud-and-generative-ai-initiatives]\n3. Nestle rolled out NesGPT internally in 2023, saving employees 45 minutes per week on tasks including drafting content and internal communications. [https://www.worklife.news/technology/nesgpt-nestle-genai/]", "scientific_support": ""}, {"id": 5, "zone": "Z1", "label": "Machine Learning — Market Intelligence", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML-powered market intelligence platforms synthesise signals from patents, academic publications, startup databases, and news to inform technology strategy decisions at Group level.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Heineken's AIDDA ML platform scaled to eight markets by 2024, using predictive modelling to support sales and competitive strategy decisions. [https://www.theheinekencompany.com/newsroom/brewing-with-ai/]\n2. Diageo uses AI Palette ML tools to scan social media and menus to identify emerging flavour trends for strategic brand decisions. [https://www.marketingweek.com/diageo-ai-real-customers/]", "scientific_support": ""}, {"id": 6, "zone": "Z1", "label": "Machine Learning — Production Analytics", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML-based anomaly detection in production metrics flags deviations from standard cost early, enabling corrective action before month-end close rather than after.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Heineken applied ML to its brewing and blending tank filtration process, producing a daily-optimised production schedule that significantly increased brewing capacity per month. [https://www.aidataanalytics.network/data-science-ai/articles/how-heineken-is-brewing-innovation-with-ai]\n2. AB InBev used deep reinforcement learning to help packing-line operators detect and auto-compensate for bottlenecks, cutting production downtime at its Wuhan brewery. [https://aiexpert.network/case-study-ab-inbev-integrates-ai-for-innovation-and-efficiency/]\n3. Diageo deployed Strategy AI analytics to optimise P&L decisions across 200+ brands with AI-generated dashboards for anomaly detection and what-if modelling. [https://www.strategysoftware.com/customer-stories/diageo]", "scientific_support": ""}, {"id": 7, "zone": "Z2", "label": "Robotic Process Automation", "stage": "Transform", "tech_description": "Robotic Process Automation (RPA) uses software bots to replicate human actions in rule-based, repetitive digital tasks - such as data entry, reconciliations, and report distribution. By automating high-volume, low-complexity work, RPA frees knowledge workers to focus on higher-value analytical and decision-making activities.", "implications": "Autonomous robots (software RPA) handle repetitive finance tasks – statement downloads, reconciliations, report distribution – freeing staff for value-added analysis.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "", "scientific_support": ""}, {"id": 8, "zone": "Z2", "label": "Financial Technology", "stage": "Transform", "tech_description": "Financial technology ((intelligent OCR, AI-powered AP/AR, virtual card programmes) encompasses digital platforms and software that modernise financial services - including payments, lending, insurance, and treasury management. Enabled by open APIs, AI, and mobile infrastructure, FinTech lowers transaction costs and accelerates the speed and accessibility of financial operations.", "implications": "Fintech enablers (intelligent OCR, AI-powered AP/AR, virtual card programmes) can automate up to 80% of high-volume, low-complexity transactions in the group's shared services centre.", "maturity_pr": "PR uses CCH Tagetik cloud CPM for group financial consolidation and operations across 80+ affiliates; currently executing LEAP programme (SAP S/4HANA global migration) to harmonise all transactional finance processes. [https://www.tagetik.com/ie/events-news/news/press?pid=%2Fpress-releases%2F2019%2Fpernod-ricard-planning-reporting]", "successful_cases": "", "scientific_support": ""}, {"id": 9, "zone": "Z2", "label": "Smart Contract", "stage": "Pilot", "tech_description": "Smart Contracts are computer programmes that automatically execute a transaction in the blockchain when certain terms and conditions are met. They can help authenticate the parties and the documentation of a transaction. Tech Opportunity Score: 8/10. (BNP l'atelier Tech Radar – Access / Infrastructure)", "implications": "Smart contracts automate payment triggers when delivery conditions are confirmed on-chain, reducing disputes in B2B trade terms with distributors.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "", "scientific_support": ""}, {"id": 10, "zone": "Z2", "label": "AI / GenAI — HR Workflow", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI interview analysis and bias detection tools support more equitable, data-driven hiring processes aligned with the group's D&I commitments.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Unilever deployed HireVue and Pymetrics AI to screen 1.8M applications annually, cutting time-to-hire by 90%, saving 1M GBP, and increasing diversity of new hires by 16%. [https://bernardmarr.com/the-amazing-ways-how-unilever-uses-artificial-intelligence-to-recruit-train-thousands-of-employees/]\n2. L'Oreal used Mya chatbot and Seedlink AI scoring to screen candidates for internships, reducing recruiter time per application from 20 to 4 minutes and producing the most diverse intern cohort to date. [https://www.peoplematters.in/article/technology/how-the-worlds-largest-cosmetic-company-transformed-its-hiring-practice-with-ai-19006]\n3. Nestle adopted ML-driven talent acquisition platforms scanning resumes and ranking applicants, saving its global recruiting team 8,000 hours annually. [https://digitaldefynd.com/IQ/nestle-using-ai/]", "scientific_support": ""}, {"id": 11, "zone": "Z2", "label": "Machine Learning — Process Mining", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML-based anomaly detection in financial and operational data provides a continuous internal control layer, flagging unusual patterns that manual controls would miss.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Siemens uses AI-based continuous monitoring integrated with its business systems to track operational and compliance data. The system detects control breaches and anomalies in near real time, improving effectiveness of process controls and reducing time to complete control testing and audits. [https://smartdev.com/ai-use-cases-in-internal-audit/]\n2. JPMorgan Chase uses AI (Watson-based) to analyze large volumes of transactional data and flag irregularities in real time, effectively acting as a detective control over payment and account activity. This reduces fraud‑detection time and supports more reliable financial records. [https://smartdev.com/ai-use-cases-in-internal-audit/]", "scientific_support": ""}, {"id": 12, "zone": "Z3", "label": "AI / GenAI — Invoice Extraction", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI continuously reconciles inter-company accounts and flags mismatches before period close, improving data quality and reducing audit adjustments.", "maturity_pr": "Match (existing tool) \nHow we can quickly extract different information from different ERPs --> governmant portal", "successful_cases": "1. Nestle automated AP invoice processing via a custom application, cutting manual labour across five teams for marketing costs, reserves, and discounts. [https://www.itmagination.com/clients/nestle]\n2. Nestle integrated SAP Joule AI copilot into its S/4HANA Cloud core, automating journal uploads, service initiations, and trade classifications. [https://technologymagazine.com/news/how-nestle-uses-sap-s4hana-cloud-to-scale-ai-operations]\n3. Coca-Cola Bottling Company United used Microsoft Power Platform RPA to automate a multi-step SAP invoicing process handling 50,000+ orders, eliminating 10 FTE equivalents. [https://www.microsoft.com/en-us/power-platform/blog/power-apps/coca-cola-united-automates-multi-step-sap-invoicing-process-power-platform/]", "scientific_support": ""}, {"id": 13, "zone": "Z3", "label": "Machine Learning — Document Processing", "stage": "Transform", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML-powered intelligent document processing automates invoice capture, coding, and posting, reducing manual accounting workload by up to 70% in high-volume shared service environments.", "maturity_pr": "PR deployed CCH Tagetik (SAP HANA-based CPM platform) for group-wide financial planning, budgeting, profitability analysis and cash forecasting across 80+ affiliates (2019). LEAP programme is currently migrating the group to SAP S/4HANA globally. [https://www.tagetik.com/ie/events-news/news/press?pid=%2Fpress-releases%2F2019%2Fpernod-ricard-planning-reporting]", "successful_cases": "", "scientific_support": ""}, {"id": 14, "zone": "Z3", "label": "Legal Technology — Contract Intelligence", "stage": "Pilot", "tech_description": "Legal technology (LegalTech) applies AI, software, and data analytics to legal and compliance processes - including contract review, regulatory monitoring, e-discovery, and risk assessment. By automating routine legal tasks, LegalTech reduces the cost and time of legal work while improving accuracy and regulatory coverage.", "implications": "LegalTech platforms automate contract review, regulatory monitoring, and compliance reporting across 70+ markets – critical for a spirits group navigating complex alcohol advertising, labelling, and distribution regulations globally.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "Unilever's legal team is deploying GenAI in its three global Legal Powerhouses to conduct research, draft letters and review contracts. [https://www.unilever.com/news/news-search/2024/legal-leadership-harnessing-genai-to-revolutionise-our-legal-teams/]", "scientific_support": ""}, {"id": 15, "zone": "Z3", "label": "Machine Learning — Regulatory Screening", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML models continuously screen regulatory databases and flag changes relevant to PR's product portfolio (health claims, ingredient labelling, packaging requirements).", "maturity_pr": "Nothing has been done yet.", "successful_cases": "Unilever's cross-functional AI assurance process uses ML-based review to assess proposed AI deployments for regulatory compliance with the EU AI Act. [https://www.unilever.com/news/news-search/2024/the-eu-ai-act-has-arrived-how-unilever-is-preparing/]", "scientific_support": ""}, {"id": 16, "zone": "Z3", "label": "AI / GenAI — Internal Communications", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI-powered internal communication platforms personalise content for each employee by role, language, and location – critical for a group of 19,000 employees across 70+ countries. GenAI translates and localises internal communications instantly into all required languages, ensuring consistent messaging across PR's 70+ market presence without proportional translation cost.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Nestle deployed NesGPT internally in August 2023, enabling 7,000+ US employees to draft, translate and summarise internal content, saving 45 minutes per employee per week. [https://www.worklife.news/technology/nesgpt-nestle-genai/]\n2. Heineken added GenAI to its internal KIM platform, allowing its 2,000-strong global insights team to query 8,000+ reports conversationally and save approximately 1,553 hours per week. [https://consumergoods.com/heineken-elevates-knowledge-insights-management-generative-ai]\n3. Coca-Cola is piloting Microsoft Copilot for M365 to help employees summarise and generate internal business communications across its global workforce. [https://www.coca-colacompany.com/media-center/the-coca-cola-company-and-microsoft-announce-five-year-strategic-partnership-to-accelerate-cloud-and-generative-ai-initiatives]", "scientific_support": ""}, {"id": 17, "zone": "Z4", "label": "AI / GenAI — Continuous Audit", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI-driven continuous audit systems detect patterns of control weakness or fraud across the full population of transactions, reducing audit cost and improving risk coverage.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Diageo uses AI-powered anomaly detection and what-if modelling via Strategy software across its 138 global production sites. [https://www.strategysoftware.com/customer-stories/diageo]\n2. AB InBev deployed Fujitsu/SettleMint blockchain with integrated audit trail across its barley supply chain in Europe. [https://www.edie.net/from-barley-to-bar-ab-inbev-pilots-blockchain-to-boost-transparency-and-traceability/]", "scientific_support": ""}, {"id": 18, "zone": "Z4", "label": "Machine Learning — Transaction Monitoring", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML can analyse 100% of transactions rather than samples, transforming audit from retrospective sampling to continuous assurance – particularly valuable across PR's complex multi-entity structure.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Microsoft (internal) – Microsoft’s internal Audit, Risk, and Compliance (ARC) team uses ML-based audit digitization to automatically flag suspicious invoices, including detecting reused images and patterns at a scale that manual testing cannot match. [https://www.microsoft.com/insidetrack/blog/boosting-internal-audits-at-microsoft-with-audit-digitization-machine-learning/]\n2. KPMG embeds AI and data analytics into its audit methodology to deliver risk‑based, data‑driven audits, continuously scanning large data sets for anomalies and patterns.[https://kpmg.com/xx/en/what-we-do/services/audit/ai-and-technology.html]\n3. PwC uses AI/ML on general ledger data to automatically review millions of transactions, surface outliers, and focus auditors on potential fraud or error. [https://chirpn.com/insight-details/how-to-automate-audit-processes-with-artificial-intelligence]", "scientific_support": ""}, {"id": 19, "zone": "Z4", "label": "Blockchain — Audit Trail", "stage": "Pilot", "tech_description": "Blockchain is a distributed, tamper-resistant digital ledger that records transactions across a decentralised network without relying on a central authority. It underpins cryptocurrencies, smart contracts, and supply chain traceability solutions that demand high levels of trust and auditability.", "implications": "Blockchain creates an immutable record of control-relevant transactions, making segregation-of-duties violations and post-hoc data manipulation immediately detectable.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. AB InBev partnered with Fujitsu and SettleMint to deploy a blockchain ledger creating a tamper-proof audit trail from barley farmers through maltsters to brewery. [https://www.edie.net/from-barley-to-bar-ab-inbev-pilots-blockchain-to-boost-transparency-and-traceability/]\n2. Unilever piloted SAP GreenToken blockchain to create immutable traceability records for its palm oil supply chain as a compliance evidence mechanism. [https://www.unilever.com/news/press-and-media/press-releases/2022/sap-unilever-pilot-blockchain-technology-supporting-deforestationfree-palm-oil/]", "scientific_support": ""}, {"id": 20, "zone": "Z4", "label": "Legal Technology — AI Act Compliance", "stage": "Pilot", "tech_description": "Legal technology (LegalTech) applies AI, software, and data analytics to legal and compliance processes - including contract review, regulatory monitoring, e-discovery, and risk assessment. By automating routine legal tasks, LegalTech reduces the cost and time of legal work while improving accuracy and regulatory coverage.", "implications": "LegalTech platforms automate contract review, regulatory monitoring, and compliance reporting across 70+ markets – critical for a spirits group navigating complex alcohol advertising, labelling, and distribution regulations globally.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "Unilever's legal team is deploying GenAI in its three global Legal Powerhouses to conduct research, draft letters and review contracts. [https://www.unilever.com/news/news-search/2024/legal-leadership-harnessing-genai-to-revolutionise-our-legal-teams/]", "scientific_support": ""}, {"id": 21, "zone": "Z4", "label": "Cryptography", "stage": "Seed", "tech_description": "The science of securing information. Key developments include post-quantum cryptography, zero-knowledge proofs, blockchain, and central bank digital currencies (CBDCs). Post-quantum cryptography is essential to protect data against future quantum computer threats. (Stanford Emerging Technology Review 2025)", "implications": "Post-quantum cryptography protects the confidentiality of sensitive legal documents, merger communications, and regulatory filings from future quantum decryption attacks – critical for a group managing commercially sensitive IP.", "maturity_pr": "", "successful_cases": "", "scientific_support": "NIST Post-Quantum Cryptography Standardisation — finalised first PQC standards (CRYSTALS-Kyber, CRYSTALS-Dilithium) in 2024, providing the blueprint for enterprise adoption. [https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-cryptography-standards]\nMicrosoft post-quantum cryptography roadmap for enterprise M&A communications (2024). [https://www.microsoft.com/en-us/security/blog/2023/09/07/taking-the-next-step-microsoft-and-post-quantum-cryptography/]"}, {"id": 22, "zone": "Z4", "label": "Quantum Computing — Pattern Detection", "stage": "Seed", "tech_description": "Quantum computing refers to next-generation computers that operate on the basis of quantum mechanical states rather than physical laws. (EconSight 100 Game Changers – Digitization)", "implications": "Quantum-enabled pattern detection will process audit populations orders of magnitude larger than today's systems, enabling true real-time assurance across all affiliates simultaneously.", "maturity_pr": "", "successful_cases": "", "scientific_support": "IBM Quantum + Deloitte research partnership on quantum-enhanced audit analytics for pattern detection in large transaction sets (2022). [https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/quantum-computing-finance]\nAcademic: 'Quantum Machine Learning for Fraud Detection' — Quantum Machine Intelligence journal (2020)."}, {"id": 23, "zone": "Z5", "label": "Financial Technology — Cash Forecasting", "stage": "Transform", "tech_description": "Financial technology (FinTech) encompasses digital platforms and software that modernise financial services - including payments, lending, insurance, and treasury management. Enabled by open APIs, AI, and mobile infrastructure, FinTech lowers transaction costs and accelerates the speed and accessibility of financial operations.", "implications": "Fintech platforms provide real-time multi-currency cash visibility, automated sweep structures, and API-driven bank connectivity – critical for a group operating across 70+ markets.", "maturity_pr": "PR uses CCH Tagetik for group-wide cash forecasting and multi-currency planning across 80+ affiliates; Ocean Insights (now project44) deployed for real-time container tracking covering 25,000 containers (2018). [https://www.tagetik.com/ie/events-news/news/press?pid=%2Fpress-releases%2F2019%2Fpernod-ricard-planning-reporting]", "successful_cases": "", "scientific_support": ""}, {"id": 24, "zone": "Z5", "label": "Machine Learning — Cash Flow", "stage": "Pilot", "tech_description": "Machine learning is a branch of AI in which systems learn from data to identify patterns and improve performance over time, without being explicitly programmed. Applications span predictive analytics, fraud detection, recommendation engines, and process optimisation across virtually every industry.", "implications": "ML-based cash flow forecasting improves 13-week rolling forecast accuracy by learning from historical payment patterns across subsidiaries and markets.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Unilever centralised cash flow forecasting through its data lake and TIS platform, automating a 13-week global cash position forecast and winning the 2023 EuroFinance Treasury Excellence Award. [https://www.eurofinance.com/news/transcending-boundaries-unilevers-cash-flow-forecasting-foresight/]\n2. Unilever implemented TIS cash forecasting to automate multi-ERP, multi-bank data aggregation, anticipating 1.5M euros annual benefit once fully rolled out across all regions. [https://tispayments.com/success-stories/unilever/]", "scientific_support": ""}, {"id": 25, "zone": "Z5", "label": "AI / GenAI — Workforce Planning", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI-driven workforce intelligence platforms move HR from lagging to leading indicators, enabling proactive talent gap identification before shortages materialise.", "maturity_pr": "1. PR Winemakers (Australia) piloted Faethm AI predictive workforce analytics to model automation impact on roles and rebuild development plans; piloted in Spain for Chief Winemaker role (c. 2021–2022). [https://www.faethm.ai/customer-success-story-pernod-ricard-winemakers]\n2. PR ran an AI Academy with PALO IT (c. 2023) training ~400 employees on GenAI, generating 240+ AI implementation opportunities across HR, finance, marketing and operations. [https://www.palo-it.com/en/case-study/pernod-ricard]", "successful_cases": "1. Coca-Cola Europacific Partners deployed Eightfold AI Talent Management for 41,000 employees in 31 countries, using AI talent intelligence to surface skills gaps, digitise 500+ succession plans, and improve internal mobility above 40%. [https://eightfold.ai/customers/customer-stories/coca-cola-europacific-partners-addresses-skills-gaps-with-eightfold/]\n2. Unilever uses Gloat AI workforce-planning platform to map 80,000+ tasks across full-time, gig, and contract roles over a five-year horizon, accelerating skills-based internal mobility. [https://resources.gloat.com/impacts/unilever-developed-a-future-proof-workforce/]\n3. Diageo uses AI to analyse business strategies and employee data to identify critical future skills and generate individual upskilling roadmaps aligned to its 2030 digital strategy. [https://www.diageo.com/en/careers/why-diageo/digital-acceleration]", "scientific_support": ""}, {"id": 26, "zone": "Z5", "label": "Simulation — Workforce Scenarios", "stage": "Pilot", "tech_description": "Simulation uses computational models to replicate the behaviour of complex real-world systems - from manufacturing lines to supply chains and financial markets - enabling organisations to stress-test scenarios, optimise processes, and de-risk decisions before committing to real-world action.", "implications": "Workforce simulation models test the impact of restructuring, upskilling, or M&A scenarios on headcount requirements before decisions are finalised.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Unilever developed a scenario-based workforce planning methodology with Gloat, building a skills ontology framework and multiple plausible future business scenarios, enabling 25% reduction in external hiring costs. [https://resources.gloat.com/impacts/unilever-developed-a-future-proof-workforce/]\n2. Nestle applies scenario simulation within its '4B' workforce planning cycle, regularly re-running scenarios on workforce transformation and adjusting hiring, build, and automation forecasts accordingly. [https://www.myhrfuture.com/digital-hr-leaders-podcast/nestles-4b-methodology-to-strategic-workforce-planning]", "scientific_support": ""}, {"id": 27, "zone": "Z5", "label": "Simulation — Strategic Scenarios", "stage": "Pilot", "tech_description": "Simulation uses computational models to replicate the behaviour of complex real-world systems - from manufacturing lines to supply chains and financial markets - enabling organisations to stress-test scenarios, optimise processes, and de-risk decisions before committing to real-world action.", "implications": "Agent-based simulations and system dynamics models allow the strategy team to test portfolio and M&A scenarios before committing capital, reducing decision risk.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. AB InBev implemented o9 Solutions for end-to-end scenario planning and simulation, covering 60% of sold volume across Colombia, Europe, US, China, Mexico, Brazil and Canada by 2022. [https://o9solutions.com/articles/ab-inbevs-future-ready-recipe-for-digital-transformation-success]\n2. Unilever automated ML-driven economic scenario simulations generating multivariate budget projections incorporating real-time inflation and commodity data. [https://www.klover.ai/unilever-ai-strategy-analysis-of-dominance-in-consumer-packaged-goods/]", "scientific_support": ""}, {"id": 28, "zone": "Z5", "label": "Digital Twin — Production Cost", "stage": "Pilot", "tech_description": "Digital twin describes the digital mapping and modeling of real or unreal objects, right up to a complete manufacturing plant. The aim is to test the functionality or simulation of processes. Digital Twin can be used also for predictive maintenance or remote process control. (EconSight 100 Game Changers – Industry, Digitization)", "implications": "A digital twin of each production site enables real-time cost-to-serve monitoring, simulates process changes before implementation, and supports site-level financial performance benchmarking.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. AB InBev deployed Azure Digital Twins across breweries to monitor energy use, detect bottlenecks in real time, and reduce electricity costs at its Wuhan site by nearly 10%. [https://azure.microsoft.com/en-us/blog/converging-the-physical-and-digital-with-digital-twins-mixed-reality-and-metaverse-apps/]\n2. Nestle uses virtual digital twins of production-line equipment across 300+ factories to simulate adjustments, cut downtime, and reduce time and cost by over 70%. [https://www.nestle.com/about/research-development/digital-innovation]", "scientific_support": ""}, {"id": 29, "zone": "Z5", "label": "Quantum Computing — FX Optimisation", "stage": "Seed", "tech_description": "Quantum computing refers to next-generation computers that operate on the basis of quantum mechanical states rather than physical laws. (EconSight 100 Game Changers – Digitization)", "implications": "Quantum algorithms will solve portfolio optimisation and FX hedging problems at a scale and speed impossible for classical computers – a decisive treasury advantage in a group managing billions in multi-currency exposure.", "maturity_pr": "", "successful_cases": "", "scientific_support": "IBM Quantum / Goldman Sachs partnership for portfolio optimisation using quantum algorithms (2021). [https://www.ibm.com/blogs/research/2021/06/quantum-finance/]\nCambridge Quantum + Honeywell for FX hedging optimisation research (2022). [https://cambridgequantum.com/our-company/news/honeywell-and-cambridge-quantum-computing-merge-to-form-quantinuum/]"}, {"id": 30, "zone": "Z6", "label": "Virtual Reality (VR)", "stage": "Pilot", "tech_description": "Virtual Reality (VR) immerses users in fully computer-generated, three-dimensional environments experienced through a headset. Beyond entertainment, VR is increasingly adopted for immersive workforce training, virtual brand experiences, and complex simulation scenarios that would be costly or risky to conduct in the real world.", "implications": "VR enables immersive safety training (distillery operations, warehouse), brand storytelling for new joiners, and on-the-job skills simulations that are more engaging and cost-effective than in-person sessions.", "maturity_pr": "1. PR India launched 'Cheers VRorld' — VR onboarding for all new hires across 14 locations using 360° headsets including virtual CEO welcome, factory tour and brand gallery (Feb 2026). [https://www.hrkatha.com/news/pernod-ricard-gives-new-hires-a-virtual-reality-welcome/]\n2. PR Winemakers created VR vineyard experience via Start Beyond for sales and internal training, deployed in Australia, UK and US — resulted in measurable premium wine sales lift (2018–2019). [https://www.startbeyond.co/case-studies/pernod-ricard-winemakers-vr]", "successful_cases": "1. Nestle rolled out VR safety training at its Nescafe factory in Girona using VRdirect, teaching forklift traffic rules to new employees before physical site access, achieving 75% information recall. [https://www.vrdirect.com/success-stories/how-nestle-is-scaling-virtual-reality-to-train-employees/]\n2. LVMH / Moet Hennessy launched Hennessy 'Ampelos', a VR vine-pruning simulator built on a digital twin of real Cognac vines, enabling craft-skills training independent of weather conditions. [https://x.com/LVMH/status/1794017936438440422]\n3. LVMH uses VR modules to immerse employees in the Moet & Chandon winemaking process, providing brand heritage and craftsmanship training at scale. [https://ismguide.com/lvmh-vr-training-case-study/]", "scientific_support": ""}, {"id": 31, "zone": "Z6", "label": "Extended Reality (XR)", "stage": "Pilot", "tech_description": "Extended Reality encompasses VR, AR, and Mixed Reality under a single umbrella. XR headsets create immersive environments for enterprise training, remote collaboration, and consumer entertainment. Tech Opportunity Score: 9/10. (BNP l'atelier Tech Radar – Access / Hardware)", "implications": "XR headsets allow a new distillery operator in India to experience the Scotch maturation process at Glenlivet in immersive 3D before setting foot in Scotland – collapsing geography as a barrier to brand education.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. AB InBev uses Microsoft HoloLens mixed reality overlaid on its brewery digital twins for remote assistance and AR-guided operator support across production facilities. [https://azure.microsoft.com/en-us/blog/converging-the-physical-and-digital-with-digital-twins-mixed-reality-and-metaverse-apps/]\n2. Nestle deployed immersive VR/XR-based safety training via the Immerse platform across global factory sites, scaling a Girona pedestrian-safety blueprint to its 354 worldwide factories. [https://immerse.io/case-study-nestle/]", "scientific_support": ""}, {"id": 32, "zone": "Z6", "label": "AI / GenAI — Personalised Learning", "stage": "Pilot", "tech_description": "Artificial Intelligence (AI) is a foundational technology with the potential to transform industries, economies, and societies at a fundamental level. Its core subfields - machine learning, deep learning, natural language processing, and computer vision - are amplified by Generative AI (GenAI), which can produce human-like text, images, code, and structured content from patterns learned at scale. Together, AI and GenAI are enabling unprecedented levels of automation, personalisation, and decision support across every business domain. (Stanford Emerging Technology Review 2025, Cosmos 1.0)", "implications": "AI coaching tools provide always-on, personalised leadership and skills development at scale, democratising access to executive coaching across all levels of the organisation. GenAI dramatically accelerates the creation of localised training content in multiple languages across PR's 19,000-strong global workforce, reducing content production cost by an order of magnitude.", "maturity_pr": "Nothing has been done yet.", "successful_cases": "1. Unilever deployed the Gloat AI-powered FLEX Experiences talent marketplace for 90,000+ employees in 90+ countries, matching staff to projects and personalised learning paths. [https://gloat.com/impacts/unilever-developed-a-future-proof-workforce/]\n2. Nestle launched NesGPT (internal GenAI based on ChatGPT) to 150,000+ employees, saving an average of 45 minutes per week and supporting personalised productivity and learning tasks. [https://www.worklife.news/technology/nesgpt-nestle-genai/]\n3. Diageo uses AI to analyse industry trends and employee data to identify critical future skills and provide employees with personalised learning paths via its My Learning Hub platform. [https://www.diageo.com/en/news-and-media/stories/2020/diageo-my-learning-hub-skills-for-life-anytime-anywhere]", "scientific_support": ""}];
+let activeTag = null;
+
+function openPopup(tid) {
+  const t = TECH_DATA.find(x => x.id === tid);
+  if (!t) return;
+  if (activeTag) activeTag.classList.remove('active');
+  activeTag = document.querySelector(`.tech-tag[data-tid="${tid}"]`);
+  if (activeTag) activeTag.classList.add('active');
+
+  const sc = t.stage.toLowerCase().includes('transform') ? 'transform'
+           : t.stage.toLowerCase().includes('pilot')     ? 'pilot' : 'seed';
+  document.getElementById('popupName').textContent = t.label;
+  document.getElementById('popupStage').innerHTML  =
+    `<span class="sb ${sc}">${t.stage}</span>`;
+
+  let html = '';
+  if (t.tech_description) html += sec('About this Technology',
+    `<div class="p-sec-txt">${t.tech_description}</div>`);
+  if (t.implications) html += sec('Implications for Pernod Ricard',
+    `<div class="p-sec-txt">${t.implications}</div>`);
+  if (t.maturity_pr) html += sec('Maturity at Pernod Ricard',
+    `<div class="p-sec-txt">${t.maturity_pr.replace(/\n/g,'<br/>')}</div>`);
+  if (t.successful_cases) html += sec('Cases in Other Companies', fmtCases(t.successful_cases));
+  if (t.scientific_support) html += sec('Scientific Support',
+    `<div class="p-sec-txt">${linkify(t.scientific_support)}</div>`);
+  if (!html) html = `<div class="p-sec"><div class="p-sec-txt" style="color:var(--t3)">No additional detail available.</div></div>`;
+
+  document.getElementById('popupBody').innerHTML = html;
+  document.getElementById('popupOverlay').classList.add('visible');
+  document.getElementById('popupPanel').classList.add('visible');
+}
+
+function closePopup() {
+  document.getElementById('popupOverlay').classList.remove('visible');
+  document.getElementById('popupPanel').classList.remove('visible');
+  if (activeTag) { activeTag.classList.remove('active'); activeTag = null; }
+}
+
+function sec(label, content) {
+  return `<div class="p-sec"><div class="p-sec-lbl">${label}</div>${content}</div>`;
+}
+function linkify(text) {
+  return text.replace(/\[?(https?:\/\/[^\]\s,]+)\]?/g,
+    (_,url) => `<a href="${url}" target="_blank" rel="noopener">[source]</a>`);
+}
+function fmtCases(text) {
+  const parts = text.split(/(?=\d+\.\s)/).map(p=>p.trim()).filter(Boolean);
+  return (parts.length>1 ? parts : [text])
+    .map(p=>`<div class="case-item">${linkify(p)}</div>`).join('');
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closePopup(); });
+</script>
+</body>
+</html>
